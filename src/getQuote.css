@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* .container {
+    
+} */
+.quote {
+    margin-top: 0;
+    padding: 150px 0 100px 0;
+    background: linear-gradient(90.21deg, rgba(21, 21, 21, 0.5) -5.91%, rgba(41, 29, 103, 0.5) 111.58%);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form#form {
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 350px);
+    padding: 3px;
+    min-width: 700px;
+    min-height: 350px;
+    border: 1px solid #ddd;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #222;
+    background-color: rgb(238 238 238 / 60%);
+    width: 100%;
+    min-height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+.field {
+    margin: 10px 0px;
+}
+
+input {
+    position: relative;
+    /* padding: 12px;
+    margin-top: 10px; */
+    width: auto;
+    text-transform: capitalize;
+    font-weight: 003;
+    border: 0px;
+    outline: 0;
+    border-bottom: 1px solid #a7a7a7;
+    border-radius: 5px;
+}
+
+.username label::after,
+.password label::after,
+.email label::after {
+    content: "*";
+    position: absolute;
+    color: rgb(175, 162, 162);
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #a7a7a7;
+}
+
+input.register {
+    background-color: rgb(0, 153, 153);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.Brief label {
+    margin-bottom: 10px;
+}
+
+textarea {
+    border-color: rgb(144, 121, 121);
+    margin-top: 10px;
+    height: 120px;
+    width: 100%;
+    background: rgba(190, 188, 188, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    outline: 0;
+    padding: 12px;
+}
+textarea.additional {
+    border-color: rgb(144, 121, 121);
+    background-color: white;
+    margin-top: 10px;
+    height: 120px;
+    width: 100%;
+    outline: 0;
+    padding: 12px;
+}
+
+select {
+    /* position: relative;
+    overflow: hidden;
+    display: block;
+    margin: auto; */
+    /* width: 330px;
+    height: 100%; */
+    /* border-bottom: 0px; */
+    color: gray;
+    border-radius: 20px;
+    font-size: 17px;
+}
+
+.pickupAccesorials{
+    color: gray;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 17px;
+}
+
+.fomSubmit {
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 5px 0 0 -10px;
+    perspective: 1000px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fomSubmit:before,
+.fomSubmit:after {
+    position: absolute;
+    content: "BUTTON";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.fomSubmit:before {
+    color: rgb(103, 103, 103);
+    background: rgb(205, 205, 205);
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.fomSubmit:after {
+    background-color: rgb(66, 17, 119);
+    color: rgb(248, 248, 248);
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.fomSubmit:hover {
+    transform: translateZ(-25px) rotateX(-90deg);
+
+}
+
+.personalInfo{
+    padding: 10px;
+}
+
+#contactBox {
+    border-radius: 4%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#detailsBox {
+    height: 1500px;
+    padding: 40px;
+    border-radius: 2%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.detailBox {
+    padding-top: 50px;
+}
+
+.aboutBox {
+    padding-top: 50px;
+}
+
+label {
+    color: gray;
+}
+
+/* .dimensionFlex{
+    display: inline-table;
+
+} */
+
+.inputDimension {
+    width: 80px;
+    height: 25px;
+}
+.zipInput {
+    padding-left: 20px;
+    background: rgba(190, 188, 188, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    width: 110px;
+    height: 25px;
+}
+
+
+
+
+
+.rowBtn {
+    color: gray;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px 0px 20px 0px;
+	background-color: #e0e0ff;
+	box-shadow: 2px 2rgb(128, 54, 180)gba(0, 0, 0, 0.4);
+	transition: border-radius 500ms ease, transform 500ms ease;
+}
+
+.rowBtn:hover{
+    border-radius: 0px 20px 0px 20px;
+	transform: skew(-10deg);
+}
+
+.rowBtn:active {
+	transform: scale(0.9);
+}
+
+
+.pickUpZip {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    color:gray;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* width: auto; */
+    /* width: 560px; */
+    height: 40px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+
+}
+
+.placeZips{
+    display: flex;
+    gap: .4rem;
+}
