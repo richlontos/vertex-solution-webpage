@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import React, { useEffect } from 'react';
 import './App.css';
 import Home from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Router, Routes, Route } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
 import Test from './pages/Test';
