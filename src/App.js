@@ -10,19 +10,19 @@ import Test from './pages/Test';
 import Faq from './pages/Faq';
 // import Services from './pages/Services';
 import WhatOffer from './pages/WhatOffer';
-// import HomeServices from './pages/Services';
-// import LTLServices from './pages/LTLServices';
-// import RailServices from './pages/RailServices';
-// import AirServices from './pages/AirServices';
-// import OceanServices from './pages/OceanServices';
-// import WarehouseServices from './pages/WarehouseServices';
-// import VolumesServices from './pages/VolumeServices';
+import HomeServices from './pages/Services';
+import LTLServices from './pages/LTLServices';
+import RailServices from './pages/RailServices';
+import AirServices from './pages/AirServices';
+import OceanServices from './pages/OceanServices';
+import WarehouseServices from './pages/WarehouseServices';
+import VolumesServices from './pages/VolumeServices';
 import './components/serviceFolder/ServicesTest.css'
 
 
 import AOS from "aos"
 import "aos/dist/aos.css"
-import CarriersTab from './pages/CarriersTab';
+// import CarriersTab from './pages/CarriersTab';
 
 
 function App() {
@@ -38,14 +38,14 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/test' element={<Test />}></Route>
-        {/* <Route path='/carriers' element={<CarriersTab />}></Route>
+        {/* <Route path='/carriers' element={<CarriersTab />}></Route> */}
         <Route path='/services' element={<HomeServices />}></Route>
         <Route path='/servicesLTL' element={<LTLServices />}></Route>
         <Route path='/RailServices' element={<RailServices />}></Route>
         <Route path='/AirServices' element={<AirServices />}></Route>
         <Route path='/OceanServices' element={<OceanServices />}></Route>
         <Route path='/VolumePartial' element={<VolumesServices />}></Route>
-        <Route path='/WarehouseServices' element={<WarehouseServices />}></Route> */}
+        <Route path='/WarehouseServices' element={<WarehouseServices />}></Route>
         <Route path='/offer' element={<WhatOffer />}></Route>
         <Route path='/faq' element={<Faq />}></Route>
       </Routes>
