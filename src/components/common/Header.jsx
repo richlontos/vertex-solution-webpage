@@ -1,4 +1,4 @@
-import { Menu } from "@mui/icons-material"
+// import { Menu } from "@mui/icons-material"
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { navlink } from "../data/dummydata"
@@ -21,7 +21,7 @@ export const Header = () => {
             ))}
           </div>
           <button className='toggle' onClick={() => setResponsive(!responsive)}>
-            <Menu className='icon' />
+            Menu
           </button>
         </div>
       </header>
