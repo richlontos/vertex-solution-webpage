@@ -18,11 +18,11 @@ import OceanServices from './pages/OceanServices';
 import WarehouseServices from './pages/WarehouseServices';
 import VolumesServices from './pages/VolumeServices';
 import './components/serviceFolder/ServicesTest.css'
+import CarriersTab from './pages/CarriersTab';
 
 
 import AOS from "aos"
 import "aos/dist/aos.css"
-// import CarriersTab from './pages/CarriersTab';
 
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/test' element={<Test />}></Route>
-        {/* <Route path='/carriers' element={<CarriersTab />}></Route> */}
+        <Route path='/carriers' element={<CarriersTab />}></Route>
         <Route path='/services' element={<HomeServices />}></Route>
         <Route path='/servicesLTL' element={<LTLServices />}></Route>
         <Route path='/RailServices' element={<RailServices />}></Route>
