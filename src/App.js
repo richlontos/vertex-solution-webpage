@@ -30,6 +30,7 @@ import OurServices from './components/OurServices';
 import Careers from './pages/Careers';
 import ResourcesTab from './components/Resources/ResourcesTab';
 import { NavBar } from './components/navBar/NavBar';
+import TermsConditions from './components/TermsConditions';
 
 
 function App() {
@@ -85,6 +86,7 @@ function App() {
               <Route path='/offer' element={<WhatOffer />}></Route>
               <Route path='/faq' element={<Faq />}></Route>
               <Route path='/resources' element={<Resources />}></Route>
+              <Route path='/termsConditions' element={<TermsConditions />}></Route>
 
             </Routes>
             <Footer />
