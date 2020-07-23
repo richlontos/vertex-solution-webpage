@@ -28,7 +28,7 @@ export const TestimonialsWarehouse = () => {
                   <img src={val.image} alt='' />
                 </div>
                 <h3 data-aos='zoom-out-left'>{val.name}</h3>
-                <label data-aos='zoom-out'>{val.post}</label>
+                <label className="labelServices" data-aos='zoom-out'>{val.post}</label>
               </div>
             ))}
           </Slider>

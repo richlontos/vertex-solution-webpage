@@ -91,7 +91,7 @@ button.downloadVC {
 }
 
 /*---------header-------------*/
-header {
+.sericeHEader {
   background-color: var(--headingColor);
   height: 10vh;
   line-height: 10vh;
@@ -102,7 +102,7 @@ header {
   z-index: 999;
 }
 
-header a {
+.sericeHEader a {
   margin-left: 40px;
 }
 
@@ -113,11 +113,11 @@ header a {
 }
 
 @media screen and (max-width: 768px) {
-  header .nav {
+  .sericeHEader .nav {
     display: none;
   }
 
-  header a {
+  .sericeHEader a {
     width: 100%;
     display: block;
     color: var(--white);
@@ -375,7 +375,7 @@ article .box:hover .overlay {
   object-fit: cover;
 }
 
-label {
+.labelServices {
   color: var(--primaryColor);
   margin: 10px 0;
   display: inline-block;

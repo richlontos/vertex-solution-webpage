@@ -8,7 +8,7 @@ export const Header = () => {
   const [responsive, setResponsive] = useState(false)
   return (
     <>
-      <header>
+      <header className="serviceHeader">
         <div className='container flexsb'>
           <div className='logo'>
             <img src={logo} alt='' data-aos='zoom-in-right' />
