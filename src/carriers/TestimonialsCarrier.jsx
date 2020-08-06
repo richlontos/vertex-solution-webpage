@@ -1,9 +1,4 @@
 import React, { useState } from "react";
-// import FormInputs from './FormInputs';
-// import useFormContext from "../hooks/useFormContext";
-// import Slider from "react-slick"
-// import { testimonials } from "../components/data/dummydata"
-// import FormatQuoteIcon from "@mui/icons-material/FormatQuote"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Stepper from "./Stepper";
@@ -14,50 +9,22 @@ import Account from "./steps/Account";
 import Details from "./steps/Details";
 import Payment from "./steps/Payment";
 import Final from "./steps/Final";
-// import FormPersonalDetail from "../carriers/FormPersonalDetail";
-// import FormUserDetail from "./FormUserDetail";
-// import Confirm from "./Confirm";
-// import Success from "./Success";
-// import { Typography } from "@mui/material";
-// import {
-//   Typography,
-//   input,
-//   Button,
-//   Stepper,
-//   Step,
-//   StepLabel
-// } from "@material-ui/core"
 
-// import { makeStyles } from "@material-ui/core";
-import { Col, Row } from "react-bootstrap";
 
 
 export const TestimonialsCarrier = () => {
     const [currentStep, setCurrentStep] = useState(1);
     
       const steps = [
-        "Account Information",
-        "Personal Details",
-        "Payment",
+        "Personal Information",
+        "Company Information",
+        "Equipment",
         "Complete",
       ];
     
-      const formTitles = ["Personal Details", "User Details", "Confirm", "Finish"];
-    const [step, setStep] = useState(0);
-    const [formData, setFormData] = useState({
-      firstName: "",
-      lastName: "",
-      email: "",
-      occupation: "",
-      bio: "",
-      city: "",
-    });
-
-  //Proceed Next Step
-  const nextStep = () => setStep(step + 1);
-
-  //Proceed Previous Step
-  const prevStep = () => setStep(step - 1);
+ 
+ 
+   
 
   const displayStep = (step) => {
     switch (step) {
