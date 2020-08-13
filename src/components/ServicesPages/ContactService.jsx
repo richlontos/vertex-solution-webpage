@@ -7,7 +7,7 @@ export const ContactServices = () => {
     <>
       <div className='contact'>
         <div className='container'>
-          <Heading title='Contact Usw' />
+          <Heading title='Contact Us' />
           <div className='content flexsb'>
             <div className='right'>
               <form>
