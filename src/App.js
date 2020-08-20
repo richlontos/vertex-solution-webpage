@@ -23,7 +23,7 @@ import CarriersTab from './pages/CarriersTab';
 
 import AOS from "aos"
 import "aos/dist/aos.css"
-import ContactServices from './components/ServicesPages/ContactService';
+import ContactUs from './pages/ContactUs';
 
 
 function App() {
@@ -42,7 +42,7 @@ function App() {
         <Route path='/carriers' element={<CarriersTab />}></Route>
         <Route path='/services' element={<HomeServices />}></Route>
         <Route path='/servicesLTL' element={<LTLServices />}></Route>
-        <Route path='/contactus' element={<ContactServices />}></Route>
+        <Route path='/contactus' element={<ContactUs />}></Route>
         <Route path='/RailServices' element={<RailServices />}></Route>
         <Route path='/AirServices' element={<AirServices />}></Route>
         <Route path='/OceanServices' element={<OceanServices />}></Route>

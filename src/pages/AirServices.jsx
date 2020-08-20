@@ -6,12 +6,14 @@ import TestimonialsAir from "../components/AirPage/TestimonialsAir"
 import BlogAir from "../components/AirPage/BlogAir"
 import ContactServicesAir from "../components/AirPage/ContactServiceAir"
 import '../components/serviceFolder/ServicesTest.css'
+import { Skills } from "../components/Skills"
 
 
 export const AirServices = () => {
   return (
     <>
       <AboutServicesAir />
+      <Skills />
       <ServicesPageAir />
       {/* <Counter />
       <Portfolio /> */}

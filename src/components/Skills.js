@@ -1,81 +1,89 @@
-import React from "react";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import meter4 from "../assets/img/meter4.svg";
-import meter5 from "../assets/img/meter5.svg";
-import meter6 from "../assets/img/meter6.svg";
-import meter7 from "../assets/img/meter7.svg";
-import Carousel from 'react-multi-carousel';
+
 import 'react-multi-carousel/lib/styles.css';
-// import arrow1 from "../assets/img/arrow1.svg";
-// import arrow2 from "../assets/img/arrow2.svg";
+import { FaHeadset, FaClock, FaMapMarkerAlt, FaServer } from 'react-icons/fa';
 import colorSharp from "../assets/img/color-sharp.png"
+import { Col, Row, Dropdown } from "react-bootstrap";
 
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
 
-  return (
-    <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Our Services</h2>
-                        <p>WHAT WE CAN DO FOR YOU</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="" />
-                                <h5 style={{'font-size': '15px'}}>LESS THAN TRUCKLOAD</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="" />
-                                <h5 style={{'font-size': '15px'}}>FULL TRUCKLOAD</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="" />
-                                <h5 style={{'font-size': '15px'}}>RAIL</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter4} alt="" />
-                                <h5 style={{'font-size': '15px'}}>AIR</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter5} alt="" />
-                                <h5 style={{'font-size': '15px'}}>OCEAN</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter6} alt="" />
-                                <h5 style={{'font-size': '15px'}}>WAREHOUSING AND DISTRIBUTION</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter7} alt="" />
-                                <h5 style={{'font-size': '15px'}}>VOLUME/PARTIAL</h5>
-                            </div>
-                        </Carousel>
+    return (
+        <section className="skill" id="skills">
+            <div className="containerSkills">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="skill-bx wow zoomIn">
+                            <Row>
+
+                                <Col style={{ "display": "inline" }}>
+                                    <h5 ><FaHeadset style={{ "display": "inline", "marginRight": "10px" }} />  CALL CENTER</h5>
+                                    <p className='paddingBanner'>
+                                        Give us a free call<br />
+                                        (562) 966-7406
+                                    </p>
+
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <h5 ><FaClock style={{ "display": "inline", "marginRight": "10px" }} />WORKING HOURS</h5>
+                                    <p>Mon-Fri 7AM - 5PM
+                                    </p>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <h5 ><FaMapMarkerAlt style={{ "display": "inline", "marginRight": "10px" }} />OUR LOCATION</h5>
+                                    <p>1675 N Main St.<br />
+                                        Orange, CA 92867
+                                    </p>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className='viewServices'>
+                                    <h5 ><FaServer style={{ "display": "inline", "marginRight": "10px" }} />VIEW SERVICES</h5>
+                                    <Dropdown class="drop-down closed">
+                                        <Dropdown.Toggle variant="success" className="nav-button" id="dropdown-banner">
+                                            Select Service
+                                        </Dropdown.Toggle>
+
+                                        <Dropdown.Menu id="dropMenu">
+                                            <Dropdown.Item id="itemColor" href="/services">FTL</Dropdown.Item>
+                                            <Dropdown.Item id="itemColor" href="/servicesLTL">LTL</Dropdown.Item>
+                                            <Dropdown.Item id="itemColor" href="/RailServices">Rail</Dropdown.Item>
+                                            <Dropdown.Item id="itemColor" href="/AirServices">Air</Dropdown.Item>
+                                            <Dropdown.Item id="itemColor" href="/OceanServices">Ocean</Dropdown.Item>
+                                            <Dropdown.Item id="itemColor" href="/volumePartial">Volume</Dropdown.Item>
+                                            <Dropdown.Item id="itemColor" href="/WarehouseServices">Warehousing and Distribution</Dropdown.Item>
+                                        </Dropdown.Menu>
+                                    </Dropdown>
+                                </Col>
+                            </Row>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
-    </section>
-  )
+            <img className="background-image-left" src={colorSharp} alt="" />
+        </section>
+    )
 }

@@ -55,13 +55,7 @@ h6 {
 
 }
 
-.containerService {
-  /* background-image: url("../../assets/img/background.jpg"); */
 
-  background: rgba(149, 110, 110, 0.19);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
 
 .flexsb {
   display: flex;
@@ -142,10 +136,11 @@ button.downloadVC {
 /*---------header-------------*/
 .containerService {
   padding-top: 150px;
-  height: 90vh;
+  height: auto;
   display: flex;
   align-items: center;
 }
+
 
 .containerServiceCarrier {
   background: rgba(149, 110, 110, 0.19);
@@ -195,6 +190,10 @@ button.downloadVC {
   font-weight: 600;
   text-align: center;
   margin-bottom: 60px;
+}
+
+.headingContact{
+  color: black;
 }
 
 /*---------about-------------*/

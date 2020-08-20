@@ -6,7 +6,7 @@ import { Contact } from "../components/Contact";
 // import { Footer } from "../components/Footer";
 // import { NavBar } from "../components/NavBar";
 import { About } from "../components/About";
-// import { Skills } from "../components/Skills";
+import { Skills } from "../components/Skills";
 import { Projects } from "../components/Projects";
 // import { Quote } from "react-bootstrap-icons";
 
@@ -17,7 +17,7 @@ const Home = () => {
         <div>
 
             <Banner />
-            {/* <Skills /> */}
+            <Skills />
             <Projects />
             <About />
             <Contact />
