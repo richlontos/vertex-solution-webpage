@@ -3,60 +3,60 @@ import { Col } from "react-bootstrap";
 // import logo from "../assets/img/logo.svg";
 // import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
+import logo from './data/images/logo.png'
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const Footer = () => {
   return (
     <footer class="footer-section">
-      <div class="container">
+      <div class="container" >
 
-        <div class="footer-content pt-5 pb-5">
+        <div class="footer-content pt-5 pb-5" >
           <div class="row">
             <div class="col-xl-4 col-lg-4 mb-50">
               <div class="footer-widget">
                 <div class="footer-logo">
-                  <h2 style={{ textDecoration: "none" }}>CESAR FB</h2 >
+                <img src={logo} alt="Logo" />
                 </div>
-                <div class="footer-text">
+                {/* <div class="footer-text">
                   <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
                     elit,Lorem ipsum dolor sit amet.</p>
-                </div>
-                {/* <div class="footer-social-icon">
+                </div> */}
+                <div class="footer-social-icon">
                   <Col size={12} sm={4} className="text-center text-sm-end">
                     <div className="social-icon">
                       <a href="#"><img src={navIcon2} alt="Icon" /></a>
                       <a href="#"><img src={navIcon3} alt="Icon" /></a>
                     </div>
                   </Col>
-                </div> */}
+                </div>
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-              <div class="footer-widget">
-                <div class="footer-widget-heading">
-                  <h3>Useful Links</h3>
-                </div>
+               
+               <div>
+                  <h3 style={{"paddingLeft":"30px"}} >Useful Links</h3>
+
+               </div>
+               <br/>
                 <ul>
                   <li><a href="#home">Home</a></li>
-                  <li><a href="#about">about</a></li>
+                  <li><a href="/aboutus">About us</a></li>
                   <li><a href="#skills">Our Services</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Contact us</a></li>
-                  <li><a href="https://cargoexpress.taicloud.net/">Track Shipment</a></li>
+                  <li><a href="/contactus">Contact</a></li>
+                  <li><a href="https://vertexsolutions.taicloud.net/Main/Home">Track Shipment</a></li>
                 </ul>
               </div>
-            </div>
             <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
               <div class="footer-widget">
-                <div class="footer-cta pt-5 pb-5">
+                <div class="footer-cta pt-4 pb-5" >
                   <div class="row">
                     <div class="col-xl-4 col-md-4 mb-30">
                       <div class="single-cta">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="cta-text">
                           <h4>Find us</h4>
-                          <span>1010 Avenue, sw 54321, chandigarh</span>
+                          <span><a href="https://www.google.co.uk/maps/place/1675+N+Main+St,+Orange,+CA+92865/@33.8154031,-117.8691972,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcd70d8d8c4d91:0x69b23414b24dbdee!8m2!3d33.8154031!4d-117.8670085" >1010 Avenue, sw 54321, chandigarh</a></span>
                         </div>
                       </div>
                     </div>
@@ -65,7 +65,7 @@ export const Footer = () => {
                         <i class="fas fa-phone"></i>
                         <div class="cta-text">
                           <h4>Call us</h4>
-                          <span>9876543210 0</span>
+                          <span><a href="tel:5629667406">(562)966-7406</a></span>
                         </div>
                       </div>
                     </div>
@@ -74,7 +74,7 @@ export const Footer = () => {
                         <i class="far fa-envelope-open"></i>
                         <div class="cta-text">
                           <h4>Mail us</h4>
-                          <span>mail@info.com</span>
+                          <span><a href="mailto:csr@vertex4solutions.net">csr@vertex4solutions.net</a></span>
                         </div>
                       </div>
                     </div>
@@ -95,6 +95,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
+            
         </div>
       </div>
       <div class="copyright-area">

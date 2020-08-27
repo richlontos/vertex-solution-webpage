@@ -5,15 +5,19 @@ import './index.css';
 import  App  from './App.js';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import CursorProvider from './context/CursorContext';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <CursorProvider>
   <React.StrictMode>
   <BrowserRouter>
     <App />
   </BrowserRouter>
 </React.StrictMode>
+</CursorProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

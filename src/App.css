@@ -439,6 +439,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   left: 45%;
   bottom: 65%;
+  color: rgb(226, 214, 214);
 }
 
 /* .contactBack{
@@ -703,6 +704,7 @@ ul {
 .footer-section {
   background: #151414;
   position: relative;
+  padding: 0px;
 }
 
 .footer-cta {

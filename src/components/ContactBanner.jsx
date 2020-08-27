@@ -9,9 +9,8 @@ function ContactBanner() {
         <div className='contactContainerService  '>
        
             <>
-               <img  src={ contact} ></img>
+               <img  src={ contact}  />
             
-                <h1 className='imageText'>Get in touch</h1>
                
             
               
