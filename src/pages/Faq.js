@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { FaqQuestions } from '../components/FaqQuestions';
 import FaqQuestions from "../FaqQuestions";
 import FaqService from "../FaqService";
+import { Skills } from "../components/Skills";
 
 
 
@@ -15,6 +16,7 @@ const Faq = () => {
   return (
     <div>
         <FaqService />
+        <Skills />
         <FaqQuestions />
     </div>
   )
