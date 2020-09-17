@@ -1,0 +1,8 @@
+.paddingCompany {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    background: rgba(103, 43, 121, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
