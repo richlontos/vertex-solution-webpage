@@ -1,54 +1,93 @@
 import React from "react";
 import './company-section.css';
-import { Container, Row, Col } from "reactstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Col, Row, Dropdown } from "react-bootstrap";
+import { FaHeadset, FaClock, FaMapMarkerAlt, FaServer } from 'react-icons/fa';
+import colorSharp from "../../assets/img/color-sharp.png"
 
+import estes from '../../assets/img/estes.png';
+import rlcarrier from '../../assets/img/rlcarrier.png';
+import ABF from '../../assets/img/ABF.png';
+import YRC from '../../assets/img/yrc.png';
+import OD from '../../assets/img/OD.png';
+import RRF from '../../assets/img/RRF.png';
+import TF from '../../assets/img/TF.png';
+import XPO from '../../assets/img/XPO.png';
+import SAIA from '../../assets/img/SAIA.png';
 
 const Company = () => {
   return (
-    <section>
-      <Container className="paddingCompany">
-        <Row className="padingCompanies">
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-            <FontAwesomeIcon icon="fa-brands fa-fedex" /> Vimeo
-            </h3>
-          </Col>
+    <section className="company" id="companies">
+      <div className="containerCompanies">
+        <div className="row">
+          <div className="col-12">
+            <div className="company-bx wow zoomIn">
+              <Row>
 
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              <i class="ri-pinterest-line"></i> Pinterest
-            </h3>
-          </Col>
+                <Col style={{ "display": "inline" }}>
+                <i class="fa-brands fa-fedex fa-4x" ></i>
+                </Col>
+              </Row>
+              <Row>
+                <Col style={{ "display": "inline" }}>
+                <img className="estes" src={estes}></img>
 
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              <i class="ri-dribbble-line"></i> Dribble
-            </h3>
-          </Col>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                <img className="rlcarrier" src={rlcarrier}></img>
 
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              {" "}
-              <i class="ri-apple-fill"></i> Apple
-            </h3>
-          </Col>
+                </Col>
+              </Row>
+              <Row>
+                <Col >
+                <img className="ABF" src={ABF}></img>
 
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              {" "}
-              <i class="ri-finder-fill"></i> Finder
-            </h3>
-          </Col>
+                </Col>
+              </Row>
+              <Row>
+                <Col >
+                <img className="YRC" src={YRC}></img>
 
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h2 className=" d-flex align-items-center gap-1">
-              {" "}
-              <i class="ri-google-fill"></i> Google
-            </h2>
-          </Col>
-        </Row>
-      </Container>
+                </Col>
+              </Row>
+              <Row>
+                <Col >
+                <img className="OD" src={OD}></img>
+
+                </Col>
+              </Row>
+              <Row>
+                <Col >
+                <img className="RRF" src={RRF}></img>
+
+                </Col>
+              </Row>
+              <Row>
+                <Col >
+                <img className="TF" src={TF}></img>
+
+                </Col>
+              </Row>
+              <Row>
+                <Col >
+                <img className="XPO" src={XPO}></img>
+
+                </Col>
+              </Row>
+              <Row>
+                <Col >
+                <img className="SAIA" src={SAIA}></img>
+
+                </Col>
+              </Row>
+            
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   );
 };
