@@ -5,6 +5,7 @@ import img3 from '../assets/img/img1-3.jpg';
 import BlogH from './BlogH';
 import Companies from './Companies';
 import ContactTab from './ContactTab';
+import { Skills } from './Skills';
 
 
 
@@ -32,6 +33,7 @@ function OurServices() {
             <Companies />
             <BlogH content={contents[1]} alternative={true} />
             <BlogH content={contents[2]} />
+            <Skills />
             {/* <Review /> */}
             <ContactTab />
         </div>

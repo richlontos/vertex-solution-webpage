@@ -4,6 +4,8 @@ import { testimonials } from "../data/dummydata"
 import { FormatQuote } from "@mui/icons-material"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { Heading } from "../common/Heading"
+
 
 export const Testimonials = () => {
   const settings = {
@@ -20,6 +22,7 @@ export const Testimonials = () => {
           <Slider {...settings}>
             {testimonials.map((val) => (
               <div className='box'>
+                <Heading  title='What our customers are saying'/>
                 <i data-aos='zoom-out-up'>
                   <FormatQuote />
                 </i>

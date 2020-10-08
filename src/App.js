@@ -28,6 +28,7 @@ import ContactUs from './pages/ContactUs';
 import Resources from './pages/Resources';
 import OurServices from './components/OurServices';
 import Careers from './pages/Careers';
+import ResourcesTab from './components/Resources/ResourcesTab';
 
 
 function App() {
@@ -56,6 +57,8 @@ function App() {
         <Route path='/WarehouseServices' element={<WarehouseServices />}></Route>
         <Route path='/offer' element={<WhatOffer />}></Route>
         <Route path='/faq' element={<Faq />}></Route>
+        <Route path='/resources' element={<Resources />}></Route>
+
       </Routes>
       <Footer />
       <motion.div

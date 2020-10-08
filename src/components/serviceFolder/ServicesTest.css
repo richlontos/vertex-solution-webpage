@@ -382,6 +382,18 @@ article .box:hover .overlay {
 
 /*---------testimonials-------------*/
 /*---------blog-------------*/
+.grid3{
+  justify-content: center;
+}
+
+.content{
+  /* justify-content: center; */
+}
+
+.blog{
+  padding-top: 200px;
+}
+
 .blog img {
   width: 100%;
 }
