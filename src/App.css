@@ -1290,3 +1290,13 @@ border-radius: 16px;
   grid-gap: 35px;
 }
 
+/* Careers */
+
+.flex-Wrap{
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+ 
+}
+
+
