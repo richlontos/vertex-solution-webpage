@@ -24,6 +24,19 @@
   box-sizing: border-box;
 }
 
+
+.appLoader {
+  text-align: center;
+  background: rgb(78, 15, 70);
+  background: linear-gradient(90deg, rgba(78, 15, 70, 1) 0%, rgba(131, 55, 148, 1) 48%, rgba(78, 15, 70, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
@@ -104,7 +117,7 @@ p.danger {
   padding-top: -30px;
 }
 
-#dropdown-basic:hover{
+#dropdown-basic:hover {
   display: block;
 }
 
@@ -420,7 +433,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 
-.containerSkills{
+.containerSkills {
   margin-left: 20px;
 }
 
@@ -431,18 +444,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: space-around;
   flex-wrap: wrap;
   border: solid;
-  border-color:  rgba(185, 184, 194, 0.47);
+  border-color: rgba(185, 184, 194, 0.47);
   background: linear-gradient(90deg, rgba(34, 32, 35, 0.47) 0%, rgba(23, 23, 63, 0.47) 35%, rgba(9, 57, 151, 0.47) 100%);
   width: 97%;
   border-radius: 30px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
- position: relative;
- left: 5px;
- padding: 60px 100px 0 75px;
- 
+  position: relative;
+  left: 5px;
+  padding: 60px 100px 0 75px;
+
 }
 
-.imageText{
+.imageText {
   position: relative;
   left: 45%;
   bottom: 65%;
@@ -460,7 +473,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 
-.headerContact{
+.headerContact {
   color: #040115;
 }
 
@@ -1232,7 +1245,7 @@ s .btn-modal {
   justify-content: center;
 }
 
-.ourServices{
+.ourServices {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1241,15 +1254,16 @@ s .btn-modal {
 
 }
 
-.mousePoint{
+.mousePoint {
   background: rgba(0, 0, 0, 0.27);
-border-radius: 16px;
+  border-radius: 16px;
 }
 
 .d_flex {
   display: flex;
   justify-content: space-between;
 }
+
 .f_flex {
   display: flex;
 }
@@ -1265,15 +1279,18 @@ border-radius: 16px;
   color: #000;
   transition: 0.5s;
 }
+
 .btn_shadow {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
 }
+
 .btn_shadow:hover {
   background: #ff014f;
   color: white;
   transform: translateY(-10px);
 }
+
 .box_shodow {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
@@ -1292,11 +1309,9 @@ border-radius: 16px;
 
 /* Careers */
 
-.flex-Wrap{
+.flex-Wrap {
   display: flex;
   flex-wrap: wrap;
   display: grid;
- 
+
 }
-
-
