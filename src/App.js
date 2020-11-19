@@ -19,7 +19,7 @@ import WarehouseServices from './pages/WarehouseServices';
 import VolumesServices from './pages/VolumeServices';
 import './components/serviceFolder/ServicesTest.css'
 import CarriersTab from './pages/CarriersTab';
-import HashLoader from "react-spinners/HashLoader";
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 import { CursorContext } from './context/CursorContext';
 import { motion } from 'framer-motion';
@@ -39,7 +39,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 2400)
+    }, 1500)
   }, [])
 
   const { cursorVariants, cursorBG } = useContext(CursorContext);
@@ -55,11 +55,11 @@ function App() {
 
           <div className='appLoader'>
 
-            <HashLoader
-              color="#ffffff"
+            <PacmanLoader
+              color="#dbed1b"
               loading={loading}
               margin={0}
-              size={100}
+              size={50}
               width={0}
             />
           </div>
