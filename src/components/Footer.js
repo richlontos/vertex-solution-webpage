@@ -56,7 +56,7 @@ export const Footer = () => {
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="cta-text">
                           <h4>Find us</h4>
-                          <span><a href="https://www.google.co.uk/maps/place/1675+N+Main+St,+Orange,+CA+92865/@33.8154031,-117.8691972,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcd70d8d8c4d91:0x69b23414b24dbdee!8m2!3d33.8154031!4d-117.8670085" >1010 Avenue, sw 54321, chandigarh</a></span>
+                          <span><a href="https://www.google.co.uk/maps/place/1675+N+Main+St,+Orange,+CA+92865/@33.8154031,-117.8691972,17z/data=!3m1!4b1!4m5!3m4!1s0x80dcd70d8d8c4d91:0x69b23414b24dbdee!8m2!3d33.8154031!4d-117.8670085" >1675 N Main St, Orange, CA 92865</a></span>
                         </div>
                       </div>
                     </div>

@@ -64,7 +64,7 @@ export const NavBar = () => {
                   <Dropdown.Item id="itemColor" href="/resources">Resources</Dropdown.Item>
                   <Dropdown.Item id="itemColor" href="/faq">FAQ</Dropdown.Item>
                   <Dropdown.Item id="itemColor" href="/contactus">Contact Us</Dropdown.Item>
-                  <Dropdown.Item id="itemColor" href="/aboutus">About Us</Dropdown.Item>
+                  {/* <Dropdown.Item id="itemColor" href="/aboutus">About Us</Dropdown.Item> */}
                   <Dropdown.Item id="itemColor" href="/careers">Careers</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
@@ -76,13 +76,13 @@ export const NavBar = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu id="dropMenu"show={showSecondDropdown}>
-                  <Dropdown.Item id="itemColor" href="/services">FTL</Dropdown.Item>
-                  <Dropdown.Item id="itemColor" href="/servicesLTL">LTL</Dropdown.Item>
-                  <Dropdown.Item id="itemColor" href="/RailServices">Rail</Dropdown.Item>
-                  <Dropdown.Item id="itemColor" href="/AirServices">Air</Dropdown.Item>
-                  <Dropdown.Item id="itemColor" href="/OceanServices">Ocean</Dropdown.Item>
-                  <Dropdown.Item id="itemColor" href="/volumePartial">Volume</Dropdown.Item>
-                  <Dropdown.Item id="itemColor" href="/WarehouseServices">Warehousing and Distribution</Dropdown.Item>
+                  <Dropdown.Item id="itemColor" href="/FTL">FTL</Dropdown.Item>
+                  <Dropdown.Item id="itemColor" href="/LTL">LTL</Dropdown.Item>
+                  <Dropdown.Item id="itemColor" href="/Rail">Rail</Dropdown.Item>
+                  <Dropdown.Item id="itemColor" href="/Air">Air</Dropdown.Item>
+                  <Dropdown.Item id="itemColor" href="/Ocean">Ocean</Dropdown.Item>
+                  <Dropdown.Item id="itemColor" href="/Volume">Volume</Dropdown.Item>
+                  <Dropdown.Item id="itemColor" href="/Warehouse">Warehousing and Distribution</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
               <Nav.Link href="https://vertexsolutions.taicloud.net/Main/Home" className="navbar-link">Track shipment/Login</Nav.Link>

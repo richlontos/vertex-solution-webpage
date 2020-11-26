@@ -4,7 +4,6 @@ import React from "react";
 import 'animate.css';
 import { GetQuote } from "../components/GetQuote";
 import '../getQuote.css'
-import { Contact } from "../components/Contact";
 
 
 

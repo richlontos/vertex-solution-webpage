@@ -39,7 +39,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 1500)
+    }, 1000)
   }, [])
 
   const { cursorVariants, cursorBG } = useContext(CursorContext);
@@ -72,16 +72,16 @@ function App() {
               <Route path='/' element={<Home />}></Route>
               <Route path='/test' element={<Test />}></Route>
               <Route path='/carriers' element={<CarriersTab />}></Route>
-              <Route path='/services' element={<HomeServices />}></Route>
-              <Route path='/servicesLTL' element={<LTLServices />}></Route>
+              <Route path='/FTL' element={<HomeServices />}></Route>
+              <Route path='/LTL' element={<LTLServices />}></Route>
               <Route path='/careers' element={<Careers />}></Route>
               <Route path='/contactus' element={<ContactUs />}></Route>
               <Route path='/ourservices' element={<OurServices />}></Route>
-              <Route path='/RailServices' element={<RailServices />}></Route>
-              <Route path='/AirServices' element={<AirServices />}></Route>
-              <Route path='/OceanServices' element={<OceanServices />}></Route>
-              <Route path='/VolumePartial' element={<VolumesServices />}></Route>
-              <Route path='/WarehouseServices' element={<WarehouseServices />}></Route>
+              <Route path='/Rail' element={<RailServices />}></Route>
+              <Route path='/Air' element={<AirServices />}></Route>
+              <Route path='/Ocean' element={<OceanServices />}></Route>
+              <Route path='/Volume' element={<VolumesServices />}></Route>
+              <Route path='/Warehouse' element={<WarehouseServices />}></Route>
               <Route path='/offer' element={<WhatOffer />}></Route>
               <Route path='/faq' element={<Faq />}></Route>
               <Route path='/resources' element={<Resources />}></Route>
