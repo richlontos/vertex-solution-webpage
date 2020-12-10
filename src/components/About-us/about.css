@@ -10,11 +10,29 @@
   font-weight: 500;
 }
 
+.about__counter{
+
+  padding-top: 5px;
+}
+
+.top_count{
+  display: flex;
+  gap: 5rem;
+}
+
+.bottom_count{
+  display: flex;
+  gap: 7rem;
+
+}
+
 .about__content {
+  
   padding-left: 50px;
 }
 
 .about__img img {
+  padding-top: 5px;
   border-radius: 15px;
 }
 
