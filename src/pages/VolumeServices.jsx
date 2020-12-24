@@ -6,7 +6,7 @@ import TestimonialsVolume from "../components/VolumeServices/TestimonialsVolume"
 import BlogVolume from "../components/VolumeServices/BlogVolume"
 import ContactServicesVolume from "../components/VolumeServices/ContactServiceVolume"
 import '../components/serviceFolder/ServicesTest.css'
-import { Skills } from "../components/Skills"
+import { Skills } from "../components/Skills/Skills"
 import ContactTab from "../components/ContactTab"
 // import PagesVolume from "../components/VolumeServices/PagesVolume"
 

@@ -4,7 +4,6 @@ import './App.css';
 import Home from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom';
-import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
 import Test from './pages/Test';
 import Faq from './pages/Faq';
@@ -30,6 +29,7 @@ import Resources from './pages/Resources';
 import OurServices from './components/OurServices';
 import Careers from './pages/Careers';
 import ResourcesTab from './components/Resources/ResourcesTab';
+import { NavBar } from './components/navBar/NavBar';
 
 
 function App() {

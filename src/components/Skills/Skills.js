@@ -1,8 +1,9 @@
 
 import 'react-multi-carousel/lib/styles.css';
 import { FaHeadset, FaClock, FaMapMarkerAlt, FaServer } from 'react-icons/fa';
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../../assets/img/color-sharp.png"
 import { Col, Row, Dropdown } from "react-bootstrap";
+import "../Skills/SkillsCss.css"
 
 export const Skills = () => {
     const responsive = {

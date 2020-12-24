@@ -5,7 +5,7 @@ import img3 from '../assets/img/img1-3.jpg';
 import BlogH from './BlogH';
 import Companies from './Companies';
 import ContactTab from './ContactTab';
-import { Skills } from './Skills';
+import { Skills } from './Skills/Skills';
 
 
 

@@ -1,14 +1,16 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard } from "../ProjectCard";
 import React from 'react';
 
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import projImg4 from "../assets/img/project-img4.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg1 from "../../assets/img/project-img1.png";
+import projImg2 from "../../assets/img/project-img2.png";
+import projImg3 from "../../assets/img/project-img3.png";
+import projImg4 from "../../assets/img/project-img4.png";
+import colorSharp2 from "../../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import "../Projects/ProjectsCss.css"
+
 
 export const Projects = () => {
 
@@ -83,7 +85,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <h2><projImg4 /> Ready to get a quote?</h2>
+                      <h2> Ready to get a quote?</h2>
                       
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">

@@ -1,15 +1,16 @@
 import React from "react";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import meter4 from "../assets/img/meter4.svg";
-import meter5 from "../assets/img/meter5.svg";
-import meter6 from "../assets/img/meter6.svg";
+import meter1 from "../../assets/img/meter1.svg";
+import meter2 from "../../assets/img/meter2.svg";
+import meter3 from "../../assets/img/meter3.svg";
+import meter4 from "../../assets/img/meter4.svg";
+import meter5 from "../../assets/img/meter5.svg";
+import meter6 from "../../assets/img/meter6.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import arrow1 from "../../assets/img/arrow1.svg";
+import arrow2 from "../../assets/img/arrow2.svg";
+import colorSharp from "../../assets/img/color-sharp.png"
+import "../About/AboutCss.css"
 
 export const About = () => {
     const responsive = {

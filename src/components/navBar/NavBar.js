@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Dropdown } from "react-bootstrap";
-import logo from './data/images/logo.png'
+import logo from "../data/images/logo.png"
+import "../navBar/NavBarStyle.css"
 
 // import logo from '../assets/img/logo.svg';
 // import navIcon1 from '../assets/img/nav-icon1.svg';
@@ -53,7 +54,11 @@ export const NavBar = () => {
               <Nav.Link href="/" className={'active navbar-link'}>Home</Nav.Link>
               {/* <Nav.Link href="/services" className={'active navbar-link'}>Our Services</Nav.Link> */}
               <Nav.Link href="/carriers" className={'active navbar-link'}>Carriers</Nav.Link>
-              <Dropdown class="drop-down closed"
+              <Nav.Link href="/resources" className={'active navbar-link'}>Resources</Nav.Link>
+              <Nav.Link href="/faq" className={'active navbar-link'}>FAQ</Nav.Link>
+              <Nav.Link href="/contactus" className={'active navbar-link'}>Contact Us</Nav.Link>
+              <Nav.Link href="/careers" className={'active navbar-link'}>Careers</Nav.Link>
+              {/* <Dropdown class="drop-down closed"
                 onMouseLeave={() => setShowDropdown(false)}
                 onMouseOver={() => setShowDropdown(true)}>
                 <Dropdown.Toggle variant="success" className="nav-button" id="dropdown-basic">
@@ -64,10 +69,9 @@ export const NavBar = () => {
                   <Dropdown.Item id="itemColor" href="/resources">Resources</Dropdown.Item>
                   <Dropdown.Item id="itemColor" href="/faq">FAQ</Dropdown.Item>
                   <Dropdown.Item id="itemColor" href="/contactus">Contact Us</Dropdown.Item>
-                  {/* <Dropdown.Item id="itemColor" href="/aboutus">About Us</Dropdown.Item> */}
                   <Dropdown.Item id="itemColor" href="/careers">Careers</Dropdown.Item>
                 </Dropdown.Menu>
-              </Dropdown>
+              </Dropdown> */}
               <Dropdown class="drop-down closed"
                 onMouseLeave={() => setshowSecondDropdown(false)}
                 onMouseOver={() => setshowSecondDropdown(true)}>

@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import ContactTab from "../components/ContactTab";
 import ContactBanner from "../components/ContactBanner";
-import { Skills } from "../components/Skills";
+import { SkillsContact } from "../components/SkillsContact";
 
 
 
@@ -16,7 +16,7 @@ const ContactUs = () => {
   return (
     <div>
        <ContactBanner />
-       <Skills />
+       <SkillsContact />
        <ContactTab />
     </div>
   )
