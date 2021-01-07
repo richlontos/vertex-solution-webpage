@@ -65,7 +65,8 @@
   
   
   .paddingBannerTwo{
-    margin: 20px;
+    /* margin: 10px; */
+    padding-top: 25px;
   
     line-height: normal;
   }

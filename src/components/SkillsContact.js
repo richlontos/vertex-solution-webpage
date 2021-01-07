@@ -60,9 +60,11 @@ export const SkillsContact = () => {
                             <Row>
                                 <Col>
                                     <h5 className='paddingBannerTwo'><FaMailBulk style={{ "display": "inline", "marginRight": "10px" }} />Emails</h5>
-                                    <p>csr@vertex4solutions.net <br />
-                                       billing@vertex4solutions.net 
-                                    </p>
+                                    <a href="mailto:csr@vertex4solutions.net">csr@vertex4solutions.net</a>
+                                    <br />
+                                    <a href="mailto:billing@vertex4solutions.net">billing@vertex4solutions.net</a>
+                                       
+                                    
                                 </Col>
                             </Row>
                             <Row>
