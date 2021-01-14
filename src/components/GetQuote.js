@@ -106,6 +106,12 @@ export const GetQuote = () => {
                         <Col className="personalInfo">
                           <input type="text" placeholder="Company Name" name="company_name" />
                         </Col>
+                        <Col size={12} sm={6} className="px-1">
+                          <input required type="email" placeholder="Company Name" name="user_company" />
+                        </Col>
+                        <Col size={12} sm={6} className="px-1">
+                          <input required type="tel" placeholder="Subject" name="subject" />
+                        </Col>
                         <Col className="personalInfo">
                           <textarea rows="6" placeholder="Message" name="message"></textarea>
                         </Col>
@@ -328,35 +334,35 @@ export const GetQuote = () => {
                           </div>
 
                         </div>
-                          <h4 className="pickUpZip" >Pick up Accesorials</h4>
-                          <Row>
+                        <h4 className="pickUpZip" >Pick up Accesorials</h4>
+                        <Row>
 
-                          </Row>
-                          <select
-                            name="pickupAccesorials"
-                            className="pickupAccesorials"
-                          >
-                            <option value="">Pick-up Accesorials</option>
-                            <option value="liftGate">Lift Gate</option>
-                            <option value="Residential">Residential</option>
-                            <option value="limitedAccess">Limited Access</option>
-                            <option value="Hazmat">Hazmat</option>
-                          </select>
+                        </Row>
+                        <select
+                          name="pickupAccesorials"
+                          className="pickupAccesorials"
+                        >
+                          <option value="">Pick-up Accesorials</option>
+                          <option value="liftGate">Lift Gate</option>
+                          <option value="Residential">Residential</option>
+                          <option value="limitedAccess">Limited Access</option>
+                          <option value="Hazmat">Hazmat</option>
+                        </select>
                         <Col size={12} sm={7} className="px-1">
                           <input type="text" placeholder="Additional Notes" name="additional_notes" />
                         </Col>
                         <h4 className="pickUpZip" >Delivery Accesorials</h4>
 
                         <select
-                            name="deliveryAccesorials"
-                            className="pickupAccesorials"
-                          >
-                            <option value="">Delivery Accesorials</option>
-                            <option value="liftGate">liftGate</option>
-                            <option value="Residential">Residential</option>
-                            <option value="limitedAccess">Limited Access</option>
-                            <option value="Appointment">Appointment</option>
-                          </select>
+                          name="deliveryAccesorials"
+                          className="pickupAccesorials"
+                        >
+                          <option value="">Delivery Accesorials</option>
+                          <option value="liftGate">liftGate</option>
+                          <option value="Residential">Residential</option>
+                          <option value="limitedAccess">Limited Access</option>
+                          <option value="Appointment">Appointment</option>
+                        </select>
                         <Col size={12} sm={7} className="px-1">
                           <input type="text" placeholder="Additional Notes" name="additional_notes" />
                         </Col>
