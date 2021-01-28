@@ -92,25 +92,25 @@ export const GetQuote = () => {
                       <Row id="contactBox">
                         <h4 className="headingCenter">CONTACT INFO</h4>
                         <Col className="personalInfo">
-                          <input type="text" placeholder="First Name" name="first_name" />
+                          <input className="quoteInput" required type="text" placeholder="First Name" name="first_name" />
                         </Col>
                         <Col className="personalInfo">
-                          <input type="text" placeholder="Last Names" name="last_name" />
+                          <input className="quoteInput" required type="text" placeholder="Last Names" name="last_name" />
                         </Col>
                         <Col className="personalInfo">
-                          <input type="email" placeholder="Email" name="email" />
+                          <input className="quoteInput" required type="email" placeholder="Email" name="email" />
                         </Col>
                         <Col className="personalInfo">
-                          <input type="tel" placeholder="Phone No." name="phone_number" />
+                          <input className="quoteInput" required type="tel" placeholder="Phone No." name="phone_number" />
                         </Col>
                         <Col className="personalInfo">
-                          <input type="text" placeholder="Company Name" name="company_name" />
+                          <input className="quoteInput" required type="text" placeholder="Company Name" name="company_name" />
                         </Col>
-                        <Col size={12} sm={6} className="px-1">
-                          <input required type="email" placeholder="Company Name" name="user_company" />
+                        <Col className="personalInfo">
+                          <input className="quoteInput" required type="email" placeholder="Company Email" name="company_email" />
                         </Col>
-                        <Col size={12} sm={6} className="px-1">
-                          <input required type="tel" placeholder="Subject" name="subject" />
+                        <Col className="personalInfo">
+                          <input className="quoteInput" required type="tel" placeholder="Subject" name="subject" />
                         </Col>
                         <Col className="personalInfo">
                           <textarea rows="6" placeholder="Message" name="message"></textarea>
@@ -127,51 +127,51 @@ export const GetQuote = () => {
                       <Row id="detailsBox">
                         <Row id="zipCodes">
 
-                          <h4 className="pickUpZip" >Pick up zip code</h4>
+                          <h4 className="pickUpZip" >Pick up location</h4>
                           <Col size={12} sm={6} className="px-1 placeZips">
                             <input
                               className="zipInput"
                               placeholder="City"
                               type="text"
-                              name="city"
+                              name="pickCity"
                             />
                             <input
                               className="zipInput"
                               placeholder="State"
                               type="text"
-                              name="state"
+                              name="pickState"
                             />
 
                             <input
                               className="zipInput"
                               placeholder="Zip code"
                               type="text"
-                              name="zipCode"
+                              name="pickZipCode"
                             />
                           </Col>
                         </Row>
 
-                        <h4 className="pickUpZip" >Destination zip code</h4>
+                        <h4 className="pickUpZip" >Destination location</h4>
                         <Row>
                           <Col size={12} sm={6} className="px-1 placeZips">
                             <input
                               className="zipInput"
                               placeholder="City"
                               type="text"
-                              name="city"
+                              name="dropCity"
                             />
                             <input
                               className="zipInput"
                               placeholder="State"
                               type="text"
-                              name="state"
+                              name="dropState"
                             />
 
                             <input
                               className="zipInput"
                               placeholder="Zip code"
                               type="text"
-                              name="zipCode"
+                              name="dropZipCode"
                             />
                           </Col>
                         </Row>
@@ -206,7 +206,7 @@ export const GetQuote = () => {
 
 
                         <Col size={12} sm={6} className="px-1">
-                          <input type="text" placeholder="Total Pallets" name="total_pallets" />
+                          <input className="inputColor" type="number" placeholder="Total Pallets" name="total_pallets" />
                         </Col>
                         <Col size={12} sm={6} className="px-1 selectFlex">
                           <select
@@ -241,7 +241,7 @@ export const GetQuote = () => {
                             <React.Fragment key={index}>
                               <br />
                               <input
-                                className="inputDimension"
+                                className="inputDimension inputColor"
                                 placeholder="Width"
                                 type="number"
                                 name="width"
@@ -249,7 +249,7 @@ export const GetQuote = () => {
                                 onChange={e => handleChange(e, index)}
                               />
                               <input
-                                className="inputDimension"
+                                className="inputDimension inputColor"
                                 placeholder="Height"
                                 type="number"
                                 name="height"
@@ -258,7 +258,7 @@ export const GetQuote = () => {
                               />
 
                               <input
-                                className="inputDimension"
+                                className="inputDimension inputColor"
                                 placeholder="Length"
                                 type="number"
                                 name="length"
@@ -280,7 +280,7 @@ export const GetQuote = () => {
                           <textarea rows="6" placeholder="Commodity Description" name="commodity"></textarea>
                         </Col>
                         <Col size={12} sm={6} className="px-1">
-                          <input type="text" placeholder="Target Rate" name="target_rate" />
+                          <input className="inputColor" type="text" placeholder="Target Rate" name="target_rate" />
                         </Col>
                         <div className="checkBoxes">
                           <div>
@@ -349,7 +349,7 @@ export const GetQuote = () => {
                           <option value="Hazmat">Hazmat</option>
                         </select>
                         <Col size={12} sm={7} className="px-1">
-                          <input type="text" placeholder="Additional Notes" name="additional_notes" />
+                          <input className="inputColor" type="text" placeholder="Additional Notes" name="pickAdditionalNotes" />
                         </Col>
                         <h4 className="pickUpZip" >Delivery Accesorials</h4>
 
@@ -364,7 +364,7 @@ export const GetQuote = () => {
                           <option value="Appointment">Appointment</option>
                         </select>
                         <Col size={12} sm={7} className="px-1">
-                          <input type="text" placeholder="Additional Notes" name="additional_notes" />
+                          <input className="inputColor" type="text" placeholder="Additional Notes" name="dropAdditionalNotes" />
                         </Col>
 
                         {
@@ -383,7 +383,7 @@ export const GetQuote = () => {
 
                       <Row>
                         <Col size={12} className="px-1">
-                          <textarea className="additional" rows="6" placeholder="type any additional comments" name="us"></textarea>
+                          <textarea  className="additional" rows="6" placeholder="type any additional comments" name="additionalNotes"></textarea>
                         </Col>
                       </Row>
                     </div>
