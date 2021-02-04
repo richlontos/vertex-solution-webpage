@@ -38,7 +38,7 @@ export default function Payment() {
         <div className="bg-white my-2 p-1 flex border border-gray-200 rounded">
           <input
             onChange={handleChange}
-            name="# Of Reefers"
+            name="reefer"
             placeholder="# Of Reefers"
             type="number"
             className="p-1 px-2 appearance-none outline-none w-full text-gray-800"
