@@ -142,3 +142,14 @@
     right: 0;
     z-index: -4;
   }
+
+  .clickMe{
+    
+    position: relative;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-10%);
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+  }

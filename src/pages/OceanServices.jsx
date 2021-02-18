@@ -18,7 +18,7 @@ export const OceanServices = () => {
       <ServicesPageOcean />
       {/* <Counter />
       <Portfolio /> */}
-      <TestimonialsOcean />
+      {/* <TestimonialsOcean /> */}
       <BlogOcean />
       <ContactTab />
     </>

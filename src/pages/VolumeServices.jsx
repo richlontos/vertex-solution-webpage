@@ -20,7 +20,7 @@ export const VolumesServices = () => {
       {/* <Counter />
       <Portfolio /> */}
       {/* <PagesVolume /> */}
-      <TestimonialsVolume />
+      {/* <TestimonialsVolume /> */}
       <BlogVolume />
       <ContactTab />
     </>

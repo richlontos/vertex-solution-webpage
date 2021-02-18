@@ -18,7 +18,7 @@ export const WarehouseServices = () => {
       <ServicesPageWarehouse />
       {/* <Counter />
       <Portfolio /> */}
-      <TestimonialsWarehouse />
+      {/* <TestimonialsWarehouse /> */}
       <BlogWarehouse />
       <ContactTab />
     </>

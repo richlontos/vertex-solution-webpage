@@ -19,7 +19,7 @@ export const LTLServices = () => {
       <ServicesPageRail />
       {/* <Counter /> */}
       <PortfolioLTL /> 
-      <TestimonialsRail />
+      {/* <TestimonialsRail /> */}
       <BlogRail />
       <ContactTab />
     </>
