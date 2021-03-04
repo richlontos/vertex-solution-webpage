@@ -99,7 +99,7 @@ export const GetQuote = () => {
   };
 
 
-  const [dimensions, setDimensions] = useState([{ width: '', height: '', length: '', pallets: '', weight: '', class: '' }]);
+  const [dimensions, setDimensions] = useState([{ width: '', height: '', length: '' }]);
 
 
   const handleChange = (e, index) => {
@@ -275,7 +275,7 @@ export const GetQuote = () => {
                             <option value="500">500</option>
                           </select>
                         </Col>
-                        <div size={12} sm={6} className="px-1 dimensionFlex">
+                        <Col size={12} sm={6} className="px-1 dimensionFlex">
                           <button className="rowBtn" type="button" onClick={handleAdd}>
                             Add row
                           </button>
@@ -284,45 +284,6 @@ export const GetQuote = () => {
                           {dimensions.map((dim, index) => (
                             <React.Fragment key={index}>
                               <br />
-                              <input
-                                className="inputDimension inputColor"
-                                placeholder="Pallets"
-                                type="number"
-                                name="pallets"
-                                value={dim.pallets}
-                                onChange={(e) => {
-                                  handleChange(e, index);
-                                  const updatedDimensions = [...dimensions];
-                                  updatedDimensions[index][e.target.name] = e.target.value;
-                                  onFormUpdate('dimensions', updatedDimensions);
-                                }}
-                              />
-                              <input
-                                className="inputDimension inputColor"
-                                placeholder="Weight"
-                                type="number"
-                                name="weight"
-                                value={dim.weight}
-                                onChange={(e) => {
-                                  handleChange(e, index);
-                                  const updatedDimensions = [...dimensions];
-                                  updatedDimensions[index][e.target.name] = e.target.value;
-                                  onFormUpdate('dimensions', updatedDimensions);
-                                }}
-                              />
-                              <input
-                                className="inputDimension inputColor"
-                                placeholder="Class"
-                                type="number"
-                                name="class"
-                                value={dim.class}
-                                onChange={(e) => {
-                                  handleChange(e, index);
-                                  const updatedDimensions = [...dimensions];
-                                  updatedDimensions[index][e.target.name] = e.target.value;
-                                  onFormUpdate('dimensions', updatedDimensions);
-                                }}
-                              />
                               <input
                                 className="inputDimension inputColor"
                                 placeholder="Width"
@@ -362,19 +323,6 @@ export const GetQuote = () => {
                                   onFormUpdate('dimensions', updatedDimensions);
                                 }}
                               />
-                              <br />
-                              <br />
-                              <input
-                                className="inputColor"
-                                placeholder="Commodity"
-                                value={dim.commodity}
-                                onChange={(e) => {
-                                  const updatedDimensions = [...dimensions];
-                                  updatedDimensions[index]['commodity'] = e.target.value;
-                                  onFormUpdate('dimensions', updatedDimensions);
-                                }}
-                              />
-                              <br />
                               {index > 0 && (
                                 <button className="rowBtn" type="button" onClick={() => handleRemove(index)}>
                                   -
@@ -383,10 +331,11 @@ export const GetQuote = () => {
                             </React.Fragment>
                           ))}
 
-
-
-                        </div>
+                        </Col>
                         <br />
+                        <Col size={12} className="px-1">
+                          <textarea rows="6" placeholder="Commodity Description" value={formDetails.commodity} onChange={(e) => onFormUpdate('commodity', e.target.value)}></textarea>
+                        </Col>
                         <Col size={12} sm={6} className="px-1">
                           <input className="inputColor" type="text" placeholder="Target Rate" value={formDetails.targetRate} onChange={(e) => onFormUpdate('targetRate', e.target.value)} />
                         </Col>
@@ -518,3 +467,36 @@ export const GetQuote = () => {
     </section>
   )
 }
+
+
+
+/////////////////backend///////////////////
+
+const headerData7 = [
+    '#',
+    'Origin Type',
+    'Destination Type',
+    'Pieces',
+    'Total Weight',
+    'Description',
+    'Class',
+    'Dimensions',
+    'Target Rate'
+  ];
+
+  const formattedDimensions = dimensions.map(dim => `${dim.width}x${dim.height}x${dim.length}`);
+  const bodyData7 = [
+    [
+      '1',
+      originType,
+      destinationType,
+      totalPallets,
+      totalWeight,
+      commodity,
+      classType,
+      formattedDimensions.join(', '),
+      targetRate
+    ]
+  ];
+
+  const table7 = generateTable('Items to Ship', headerData7, bodyData7);

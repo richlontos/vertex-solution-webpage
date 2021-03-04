@@ -9,19 +9,6 @@ import TrackVisibility from 'react-on-screen';
 export const ContactTab = () => {
   const form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('service_buds8es', 'template_kktou5e', form.current, 'iKlbYuVeqikztfOPx')
-  //     .then((result) => {
-  //       console.log(result.text);
-  //     }, (error) => {
-  //       console.log(error.text);
-  //     });
-  //   e.target.reset()
-  // };
-
-
 
   const formInitialDetails = {
     firstName: '',
@@ -32,6 +19,9 @@ export const ContactTab = () => {
     companyName: '',
     interestedIn: ''
   }
+  
+
+  
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
@@ -82,27 +72,6 @@ export const ContactTab = () => {
                   <form ref={form}
                     onSubmit={handleSubmit}>
                     <Row>
-                      {/* <Col size={12} sm={6} className="px-1">
-                        <input required type="text" placeholder="First Name" name="user_first" />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input required type="text" placeholder="Last Name" name="user_last" />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input required type="email" placeholder="Email Address" name="user_email" />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input required type="tel" placeholder="Phone No." name="phone_number" />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input required type="email" placeholder="Company Name" name="user_company" />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input required type="tel" placeholder="Interested in" name="interested_in" />
-                      </Col>
-                      <Col size={12} className="px-1">
-                        <textarea rows="6" placeholder="Message" name="message"></textarea>
-                      </Col> */}
                       <Col size={12} sm={6} className="px-1">
                         <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                       </Col>
