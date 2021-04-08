@@ -3,22 +3,11 @@ import { useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-// import emailjs from '@emailjs/browser';
 
 export const GetQuote = () => {
   const form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
 
-  //   emailjs.sendForm('service_buds8es', 'template_kktou5e', form.current, 'iKlbYuVeqikztfOPx')
-  //     .then((result) => {
-  //       console.log(result.text);
-  //     }, (error) => {
-  //       console.log(error.text);
-  //     });
-  //   e.target.reset()
-  // };
 
 
   const formInitialDetails = {
@@ -44,13 +33,8 @@ export const GetQuote = () => {
     commodity: '',
     targetRate: '',
     totalWeight: '',
-    ltlQuote: false,
-    volumeLtlQuote: false,
-    ftlQuote: false,
-    rail: false,
-    air: false,
-    ocean: false,
-    warehousing: false,
+    weight: '',
+    quoteType: '',
     pickupAccesorials: '',
     pickAdditionalNotes: '',
     deliveryAccesorials: '',
@@ -250,31 +234,7 @@ export const GetQuote = () => {
                           <input className="inputColor" type="number" placeholder="Total Pallets" value={formDetails.totalPallets} onChange={(e) => onFormUpdate('totalPallets', e.target.value)} />
                         </Col>
 
-                        <Col size={12} sm={6} className="px-1 selectFlex">
-                          <select
-                            value={formDetails.classType}
-                            onChange={(e) => onFormUpdate('classType', e.target.value)}
-                          >
-                            <option value="">Class</option>
-                            <option value="50">50</option>
-                            <option value="55">55</option>
-                            <option value="60">60</option>
-                            <option value="70">70</option>
-                            <option value="77.5">77.5</option>
-                            <option value="85">85</option>
-                            <option value="92.4">92.4</option>
-                            <option value="100">100</option>
-                            <option value="110">110</option>
-                            <option value="125">125</option>
-                            <option value="150">150</option>
-                            <option value="175">175</option>
-                            <option value="200">200</option>
-                            <option value="250">250</option>
-                            <option value="300">300</option>
-                            <option value="400">400</option>
-                            <option value="500">500</option>
-                          </select>
-                        </Col>
+
                         <div size={12} sm={6} className="px-1 dimensionFlex">
                           <button className="rowBtn" type="button" onClick={handleAdd}>
                             Add row
@@ -303,19 +263,6 @@ export const GetQuote = () => {
                                 type="number"
                                 name="weight"
                                 value={dim.weight}
-                                onChange={(e) => {
-                                  handleChange(e, index);
-                                  const updatedDimensions = [...dimensions];
-                                  updatedDimensions[index][e.target.name] = e.target.value;
-                                  onFormUpdate('dimensions', updatedDimensions);
-                                }}
-                              />
-                              <input
-                                className="inputDimension inputColor"
-                                placeholder="Class"
-                                type="number"
-                                name="class"
-                                value={dim.class}
                                 onChange={(e) => {
                                   handleChange(e, index);
                                   const updatedDimensions = [...dimensions];
@@ -362,8 +309,41 @@ export const GetQuote = () => {
                                   onFormUpdate('dimensions', updatedDimensions);
                                 }}
                               />
+                              <select
+                                className="inputDimension inputColor"
+                                placeholder="Class"
+                                type="number"
+                                name="class"
+                                value={dim.class}
+                                onChange={(e) => {
+                                  handleChange(e, index);
+                                  const updatedDimensions = [...dimensions];
+                                  updatedDimensions[index][e.target.name] = e.target.value;
+                                  onFormUpdate('dimensions', updatedDimensions);
+                                }}
+                              >
+                                <option value="">Class</option>
+                                <option value="50">50</option>
+                                <option value="55">55</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                                <option value="77.5">77.5</option>
+                                <option value="85">85</option>
+                                <option value="92.4">92.4</option>
+                                <option value="100">100</option>
+                                <option value="110">110</option>
+                                <option value="125">125</option>
+                                <option value="150">150</option>
+                                <option value="175">175</option>
+                                <option value="200">200</option>
+                                <option value="250">250</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                              </select>
                               <br />
                               <br />
+
                               <input
                                 className="inputColor"
                                 placeholder="Commodity"
@@ -393,69 +373,25 @@ export const GetQuote = () => {
                         <Col size={12} sm={6} className="px-1">
                           <input className="inputColor" type="number" placeholder="Total Weight" value={formDetails.totalWeight} onChange={(e) => onFormUpdate('totalWeight', e.target.value)} />
                         </Col>
-                        <div className="checkBoxes">
-                          <div>
-                            <label>LTL Quote</label>
-                            <input
-                              value={formDetails.ltlQuote}
-                              onChange={(e) => onFormUpdate('ltlQuote', e.target.value)}
-                              type="checkbox"
-                            />
-                          </div>
-                          <div>
-                            <label>Volume LTL Quote</label>
-                            <input
-                              value={formDetails.volumeLtlQuote}
-                              onChange={(e) => onFormUpdate('volumeLtlQuote', e.target.value)}
-                              type="checkbox"
-                            />
-                          </div>
-                          <div>
-                            <label>FTL Quote</label>
-                            <input
-                              value={formDetails.ftlQuote}
-                              onChange={(e) => onFormUpdate('ftlQuote', e.target.value)}
-                              type="checkbox"
-                            />
-                          </div>
-                          <div>
-                            <label>Rail</label>
-                            <input
-                              value={formDetails.rail}
-                              onChange={(e) => onFormUpdate('rail', e.target.value)}
-                              type="checkbox"
-                            />
-                          </div>
-                          <div>
-                            <label>Air</label>
-                            <input
-                              value={formDetails.air}
-                              onChange={(e) => onFormUpdate('air', e.target.value)}
-                              type="checkbox"
-                            />
-                          </div>
-                          <div>
-                            <label>Ocean</label>
-                            <input
-                              value={formDetails.ocean}
-                              onChange={(e) => onFormUpdate('ocean', e.target.value)}
-                              type="checkbox"
-                            />
-                          </div>
-                          <div>
-                            <label>Warehousing</label>
-                            <input
-                              value={formDetails.warehousing}
-                              onChange={(e) => onFormUpdate('warehousing', e.target.value)}
-                              type="checkbox"
-                            />
-                          </div>
+                        <Col>
+                          <select
+                            value={formDetails.quoteType}
+                            onChange={(e) => onFormUpdate('quoteType', e.target.value)}
+                            className="pickupAccesorials"
+                          >
+                            <option value="">Quote Type</option>
+                            <option value="ltlQuote">LTL Quote</option>
+                            <option value="vLtlQuote">Volume LTL Quote</option>
+                            <option value="ftlQuote">FTL Quote</option>
+                            <option value="rail">Rail</option>
+                            <option value="air">Air</option>
+                            <option value="ocean">Ocean</option>
+                            <option value="warehousing">Warehousing</option>
+                          </select>
+                        </Col>
 
-                        </div>
                         <h4 className="pickUpZip" >Pick up Accesorials</h4>
-                        <Row>
 
-                        </Row>
                         <select
                           value={formDetails.pickupAccesorials}
                           onChange={(e) => onFormUpdate('pickupAccesorials', e.target.value)}
