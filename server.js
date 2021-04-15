@@ -338,8 +338,10 @@ const generateQuoteTemplate = (formData) => {
                   </td>
               </tr>
               <tr>
-                  <td colspan="2" style="padding: 10px;">
+                   <td style="width: 50%; vertical-align: top; padding: 10px;">
                       ${table8}
+                  </td>
+                  <td style="width: 50%; vertical-align: top; padding: 10px;">
                       ${table9}
                   </td>
               </tr>
