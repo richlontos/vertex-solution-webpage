@@ -380,13 +380,13 @@ export const GetQuote = () => {
                             className="pickupAccesorials"
                           >
                             <option value="">Quote Type</option>
-                            <option value="ltlQuote">LTL Quote</option>
-                            <option value="vLtlQuote">Volume LTL Quote</option>
-                            <option value="ftlQuote">FTL Quote</option>
-                            <option value="rail">Rail</option>
-                            <option value="air">Air</option>
-                            <option value="ocean">Ocean</option>
-                            <option value="warehousing">Warehousing</option>
+                            <option value="LTL QUote">LTL Quote</option>
+                            <option value="Volume LTL Quote">Volume LTL Quote</option>
+                            <option value="FTL Quote">FTL Quote</option>
+                            <option value="Rail">Rail</option>
+                            <option value="Air">Air</option>
+                            <option value="Ocean">Ocean</option>
+                            <option value="Warehousing">Warehousing</option>
                           </select>
                         </Col>
 
