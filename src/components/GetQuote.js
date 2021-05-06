@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -62,25 +62,61 @@ export const GetQuote = () => {
   }
 
 
-  const handleSubmit = async (e) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+useEffect(() => {
+    if (isSubmitting) {
+      async function submitData() {
+        let response = await fetch("https://vertex-solution-webpage.onrender.com/quote", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json;charset=utf-8",
+          },
+          body: JSON.stringify(formDetails),
+        });
+        setButtonText("Send");
+        let result = await response.json();
+        setFormDetails(formInitialDetails);
+        if (result.code == 200) {
+          setStatus({ success: true, message: 'Message sent successfully' });
+        } else {
+          setStatus({ success: false, message: 'Something went wrong, please try again later.' });
+        }
+        setIsSubmitting(false); // reset the submitting status
+      }
+
+      submitData();
+    }
+  }, [isSubmitting]);
+
+const handleSubmit = (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("https://vertex-solution-webpage.onrender.com/quote", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ success: true, message: 'Message sent successfully' });
-    } else {
-      setStatus({ success: false, message: 'Something went wrong, please try again later.' });
-    }
-  };
+    setIsSubmitting(true);
+};
+
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setButtonText("Sending...");
+  //   console.log('ButtonText after setting to Sending:', buttonText);
+
+  //   let response = await fetch("https://vertex-solution-webpage.onrender.com/quote", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json;charset=utf-8",
+  //     },
+  //     body: JSON.stringify(formDetails),
+  //   });
+  //   setButtonText("Send");
+  //   let result = await response.json();
+  //   setFormDetails(formInitialDetails);
+  //   if (result.code == 200) {
+  //     setStatus({ success: true, message: 'Message sent successfully' });
+  //   } else {
+  //     setStatus({ success: false, message: 'Something went wrong, please try again later.' });
+  //   }
+  // };
 
 
   const [dimensions, setDimensions] = useState([{ width: '', height: '', length: '', pallets: '', weight: '', class: '' }]);
@@ -435,7 +471,7 @@ export const GetQuote = () => {
                       <Row>
                         <Col size={12} className="px-1">
                           <textarea className="additional" rows="6" placeholder="type any additional comments" value={formDetails.additionalNotes} onChange={(e) => onFormUpdate('additionalNotes', e.target.value)}></textarea>
-                          <button type="submit" className="fomSubmit"><span>{buttonText}</span></button>
+                          <button type="submit" className="fomSubmit" disabled={buttonText === "Sending..."}><span>{buttonText}</span></button>
                         </Col>
                         {
                           status.message &&
