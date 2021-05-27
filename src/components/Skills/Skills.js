@@ -53,8 +53,8 @@ export const Skills = () => {
                             <Row>
                                 <Col>
                                     <h5 ><FaMapMarkerAlt style={{ "display": "inline", "marginRight": "10px" }} />OUR LOCATION</h5>
-                                    <p>1675 N Main St.<br />
-                                        Orange, CA 92867
+                                    <p>1151 Duryea Ave<br />
+                                        Irvine, CA 92614
                                     </p>
                                 </Col>
                             </Row>

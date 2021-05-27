@@ -1,0 +1,29 @@
+/************ About Css ************/
+.aboutB {
+    padding: 0 0 50px 0;
+    position: relative;
+  }
+  
+  .aboutB-bx {
+    background: #151515;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+  }
+  
+  .aboutB h2 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+  
+  .aboutB p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+  }
+
+  
+
+  
