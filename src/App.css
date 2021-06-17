@@ -96,7 +96,8 @@ select:focus {
 @media (min-width:1700px) {
   main .container {
     max-width: 100%;
-    padding: 0 150px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -238,7 +239,7 @@ ul {
 
 .footer-widget ul li {
   display: inline-block;
-  float: left;
+  /* float: left; */
   width: 50%;
   margin-bottom: 12px;
 }
@@ -274,8 +275,9 @@ ul {
 
 .copyright-text p {
   margin: 0;
-  font-size: 14px;
+  /* font-size: 18px; */
   color: #878787;
+  padding-left: 55px;
 }
 
 .copyright-text p a {
@@ -374,7 +376,8 @@ ul {
   background: #FFFFFF;
   border-radius: 55px;
   color: #121212;
-  padding: 85px 125px;
+  padding: 100%;
+  width: 100%;
   margin-bottom: 80px;
   margin-top: -122px;
 }
@@ -438,7 +441,7 @@ ul {
 }
 
 .footer img {
-  width: 26%;
+  width: 100%;
 }
 
 .footer p {
@@ -700,8 +703,8 @@ s .btn-modal {
 
 
 .contactIcons{
-  display: inline;
-  
+  display: block;
+  text-align: center;
 }
 
 
