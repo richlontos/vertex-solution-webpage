@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import '../getQuote.css';
 
 export const GetQuote = () => {
   const form = useRef();
@@ -140,7 +141,7 @@ const handleSubmit = (e) => {
   return (
     <section className="quote" id="connect">
       <Container className="formCenter">
-        <Row className="align-items-center">
+        <Row id="align-items-center">
 
           <Col size={12} md={6}>
             <TrackVisibility>

@@ -13,10 +13,10 @@
 
 
 
-/* .align-items-center {
+#align-items-center {
     display: flex;
     justify-content: center;
-} */
+}
 
 .headingCenter {
     display: flex;
