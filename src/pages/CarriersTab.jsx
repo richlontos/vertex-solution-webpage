@@ -6,7 +6,7 @@ import TestimonialsCarrier from "../carriers/TestimonialsCarrier"
 import BlogCarrier from "../carriers/BlogCarrier"
 import ContactServicesCarrier from "../carriers/ContactServiceCarrier"
 import '../components/serviceFolder/ServicesTest.css'
-
+import { FormProvider } from "../context/FormContext"
 
 export const CarriersTab = () => {
   return (
@@ -15,7 +15,10 @@ export const CarriersTab = () => {
       {/* <ServicesPageCarrier /> */}
       {/* <Counter />
       <Portfolio /> */}
-      <TestimonialsCarrier />
+      <FormProvider>
+        <TestimonialsCarrier />
+
+      </FormProvider>
       <BlogCarrier />
       <ContactServicesCarrier />
     </>

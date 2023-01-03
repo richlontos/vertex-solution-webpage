@@ -1,27 +1,8 @@
-import React, { useState } from "react";
-import FormInputs from './FormInputs';
-import useFormContext from "../hooks/useFormContext";
-// import Slider from "react-slick"
-// import { testimonials } from "../components/data/dummydata"
-// import FormatQuoteIcon from "@mui/icons-material/FormatQuote"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-// import {
-//   Typography,
-//   input,
-//   Button,
-//   Stepper,
-//   Step,
-//   StepLabel
-// } from "@material-ui/core"
+import FormInputs from './FormInputs'
+import useFormContext from "../hooks/useFormContext"
 
-// import { makeStyles } from "@material-ui/core";
-import { Col, Row } from "react-bootstrap";
+const Form = () => {
 
-
-
-
-export const TestimonialsCarrier = () => {
     const {
         page,
         setPage,
@@ -69,6 +50,4 @@ export const TestimonialsCarrier = () => {
 
     return content
 }
-
-
-export default TestimonialsCarrier;
+export default Form
