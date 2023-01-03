@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-import FormInputs from './FormInputs';
-import useFormContext from "../hooks/useFormContext";
+// import FormInputs from './FormInputs';
+// import useFormContext from "../hooks/useFormContext";
 // import Slider from "react-slick"
 // import { testimonials } from "../components/data/dummydata"
 // import FormatQuoteIcon from "@mui/icons-material/FormatQuote"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import FormPersonalDetail from "../carriers/FormPersonalDetail";
+import FormUserDetail from "./FormUserDetail";
+import Confirm from "./Confirm";
+import Success from "./Success";
+import { Typography } from "@mui/material";
 // import {
 //   Typography,
 //   input,
@@ -22,53 +27,52 @@ import { Col, Row } from "react-bootstrap";
 
 
 export const TestimonialsCarrier = () => {
-    const {
-        page,
-        setPage,
-        data,
-        title,
-        canSubmit,
-        disablePrev,
-        disableNext,
-        prevHide,
-        nextHide,
-        submitHide
-    } = useFormContext()
+    const formTitles = ["Personal Details", "User Details", "Confirm", "Finish"];
+  const [step, setStep] = useState(0);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    occupation: "",
+    bio: "",
+    city: "",
+  });
 
-    const handlePrev = () => setPage(prev => prev - 1)
+  //Proceed Next Step
+  const nextStep = () => setStep(step + 1);
 
-    const handleNext = () => setPage(prev => prev + 1)
+  //Proceed Previous Step
+  const prevStep = () => setStep(step - 1);
 
-    const handleSubmit = e => {
-        e.preventDefault()
-        console.log(JSON.stringify(data))
+  const formsToDisplay = () => {
+    switch(step){
+      case 0:
+        return (
+          <FormPersonalDetail nextStep={nextStep} prevStep={prevStep} formData={formData} setFormData={setFormData} />
+        )
+      case 1:
+        return (
+          <FormUserDetail nextStep={nextStep} prevStep={prevStep} formData={formData} setFormData={setFormData} />
+        )
+      case 2:
+        return (
+          <Confirm nextStep={nextStep} prevStep={prevStep} formData={formData} />
+        )
+      case 3:
+        return (
+          <Success nextStep={nextStep} prevStep={prevStep} formData={formData} />
+        )
+      default:
+        return (<FormPersonalDetail nextStep={nextStep} prevStep={prevStep} formData={formData} />)
     }
-
-
-    const content = (
-        <form className="form flex-col" onSubmit={handleSubmit}>
-
-            <header className="form-header">
-                <h2>{title[page]}</h2>
-
-                <div className="button-container">
-
-                    <button type="button" className={`button ${prevHide}`} onClick={handlePrev} disabled={disablePrev}>Prev</button>
-
-                    <button type="button" className={`button ${nextHide}`} onClick={handleNext} disabled={disableNext}>Next</button>
-
-                    <button type="submit" className={`button ${submitHide}`} disabled={!canSubmit}>Submit</button>
-                </div>
-            </header>
-
-
-            <FormInputs />
-
-        </form>
-    )
-
-    return content
-}
+  }
+  return (
+    <div className="formMulti">
+      <Typography className="formHeader" variant="h4">{formTitles[step]}</Typography>
+      {formsToDisplay()}      
+    </div>
+  );
+};
 
 
 export default TestimonialsCarrier;
