@@ -3,12 +3,12 @@ import React from "react";
 //import components
 import { Banner } from "../components/Banner";
 import { Contact } from "../components/Contact";
-import { Footer } from "../components/Footer";
-import { NavBar } from "../components/NavBar";
+// import { Footer } from "../components/Footer";
+// import { NavBar } from "../components/NavBar";
 import { About } from "../components/About";
-import { Skills } from "../components/Skills";
+// import { Skills } from "../components/Skills";
 import { Projects } from "../components/Projects";
-import { Quote } from "react-bootstrap-icons";
+// import { Quote } from "react-bootstrap-icons";
 
 
 

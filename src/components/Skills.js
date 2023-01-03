@@ -8,8 +8,8 @@ import meter6 from "../assets/img/meter6.svg";
 import meter7 from "../assets/img/meter7.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+// import arrow1 from "../assets/img/arrow1.svg";
+// import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -43,31 +43,31 @@ export const Skills = () => {
                         <p>WHAT WE CAN DO FOR YOU</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="" />
                                 <h5 style={{'font-size': '15px'}}>LESS THAN TRUCKLOAD</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="" />
                                 <h5 style={{'font-size': '15px'}}>FULL TRUCKLOAD</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter3} alt="" />
                                 <h5 style={{'font-size': '15px'}}>RAIL</h5>
                             </div>
                             <div className="item">
-                                <img src={meter4} alt="Image" />
+                                <img src={meter4} alt="" />
                                 <h5 style={{'font-size': '15px'}}>AIR</h5>
                             </div>
                             <div className="item">
-                                <img src={meter5} alt="Image" />
+                                <img src={meter5} alt="" />
                                 <h5 style={{'font-size': '15px'}}>OCEAN</h5>
                             </div>
                             <div className="item">
-                                <img src={meter6} alt="Image" />
+                                <img src={meter6} alt="" />
                                 <h5 style={{'font-size': '15px'}}>WAREHOUSING AND DISTRIBUTION</h5>
                             </div>
                             <div className="item">
-                                <img src={meter7} alt="Image" />
+                                <img src={meter7} alt="" />
                                 <h5 style={{'font-size': '15px'}}>VOLUME/PARTIAL</h5>
                             </div>
                         </Carousel>

@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { useState, useRef, useEffect } from "react";
-import { FiArrowDown } from "react-icons/fi";
-import { Container, Row, Col } from "react-bootstrap";
-import Faq from 'react-faq-component';
+import React from "react";
+// import { useState, useRef, useEffect } from "react";
+// import { FiArrowDown } from "react-icons/fi";
+// import { Container, Row, Col } from "react-bootstrap";
+// import Faq from 'react-faq-component';
 // import contactImg from "../assets/img/contact-img.svg";
-import contactImg from "./assets/img/contact-img.svg";
+// import contactImg from "./assets/img/contact-img.svg";
 import 'animate.css';
 import './Questions.css'
 import './Faq.js';
