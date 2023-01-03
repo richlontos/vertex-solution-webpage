@@ -6,11 +6,19 @@ import React, { useState } from "react";
 // import FormatQuoteIcon from "@mui/icons-material/FormatQuote"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import FormPersonalDetail from "../carriers/FormPersonalDetail";
-import FormUserDetail from "./FormUserDetail";
-import Confirm from "./Confirm";
-import Success from "./Success";
-import { Typography } from "@mui/material";
+import Stepper from "./Stepper";
+import StepperControl from "./StepperControl";
+import { UseContextProvider } from "../contexts/StepperContext";
+
+import Account from "./steps/Account";
+import Details from "./steps/Details";
+import Payment from "./steps/Payment";
+import Final from "./steps/Final";
+// import FormPersonalDetail from "../carriers/FormPersonalDetail";
+// import FormUserDetail from "./FormUserDetail";
+// import Confirm from "./Confirm";
+// import Success from "./Success";
+// import { Typography } from "@mui/material";
 // import {
 //   Typography,
 //   input,
@@ -24,19 +32,26 @@ import { Typography } from "@mui/material";
 import { Col, Row } from "react-bootstrap";
 
 
-
-
 export const TestimonialsCarrier = () => {
-    const formTitles = ["Personal Details", "User Details", "Confirm", "Finish"];
-  const [step, setStep] = useState(0);
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    occupation: "",
-    bio: "",
-    city: "",
-  });
+    const [currentStep, setCurrentStep] = useState(1);
+    
+      const steps = [
+        "Account Information",
+        "Personal Details",
+        "Payment",
+        "Complete",
+      ];
+    
+      const formTitles = ["Personal Details", "User Details", "Confirm", "Finish"];
+    const [step, setStep] = useState(0);
+    const [formData, setFormData] = useState({
+      firstName: "",
+      lastName: "",
+      email: "",
+      occupation: "",
+      bio: "",
+      city: "",
+    });
 
   //Proceed Next Step
   const nextStep = () => setStep(step + 1);
@@ -44,35 +59,50 @@ export const TestimonialsCarrier = () => {
   //Proceed Previous Step
   const prevStep = () => setStep(step - 1);
 
-  const formsToDisplay = () => {
-    switch(step){
-      case 0:
-        return (
-          <FormPersonalDetail nextStep={nextStep} prevStep={prevStep} formData={formData} setFormData={setFormData} />
-        )
+  const displayStep = (step) => {
+    switch (step) {
       case 1:
-        return (
-          <FormUserDetail nextStep={nextStep} prevStep={prevStep} formData={formData} setFormData={setFormData} />
-        )
+        return <Account />;
       case 2:
-        return (
-          <Confirm nextStep={nextStep} prevStep={prevStep} formData={formData} />
-        )
+        return <Details />;
       case 3:
-        return (
-          <Success nextStep={nextStep} prevStep={prevStep} formData={formData} />
-        )
+        return <Payment />;
+      case 4:
+        return <Final />;
       default:
-        return (<FormPersonalDetail nextStep={nextStep} prevStep={prevStep} formData={formData} />)
     }
-  }
+  };
+
+  const handleClick = (direction) => {
+    let newStep = currentStep;
+
+    direction === "next" ? newStep++ : newStep--;
+    // check if steps are within bounds
+    newStep > 0 && newStep <= steps.length && setCurrentStep(newStep);
+  };
+
   return (
-    <div className="formMulti">
-      <Typography className="formHeader" variant="h4">{formTitles[step]}</Typography>
-      {formsToDisplay()}      
+    <div className="mx-auto rounded-2xl bg-white pb-2 shadow-xl md:w-1/2">
+      {/* Stepper */}
+      <div className="horizontal container mt-5 ">
+        <Stepper steps={steps} currentStep={currentStep} />
+
+        <div className="my-10 p-10 ">
+          <UseContextProvider>{displayStep(currentStep)}</UseContextProvider>
+        </div>
+      </div>
+
+      {/* navigation button */}
+      {currentStep !== steps.length && (
+        <StepperControl
+          handleClick={handleClick}
+          currentStep={currentStep}
+          steps={steps}
+        />
+      )}
     </div>
   );
-};
+}
 
 
 export default TestimonialsCarrier;
