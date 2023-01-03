@@ -1,10 +1,10 @@
-import { Settings, CropRotate, ViewInAr, PieChart, Code, BarChart, CloudOutlined, FavoriteBorder, Public, PersonOutlined, AddLocationAltOutlined, PhoneIphone, EmailOutlined, Facebook, Twitter, Instagram, YouTube } from "@mui/icons-material"
+// import { Settings, CropRotate, ViewInAr, PieChart, Code, BarChart, CloudOutlined, FavoriteBorder, Public, PersonOutlined, AddLocationAltOutlined, PhoneIphone, EmailOutlined, Facebook, Twitter, Instagram, YouTube } from "@mui/icons-material"
 import React from "react"
-import ScaleIcon from '@mui/icons-material/Scale';
-import TableRowsIcon from '@mui/icons-material/TableRows';
-import PublicIcon from '@mui/icons-material/Public';
-import AcUnitIcon from '@mui/icons-material/AcUnit';
-import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+// import ScaleIcon from '@mui/icons-material/Scale';
+// import TableRowsIcon from '@mui/icons-material/TableRows';
+// import PublicIcon from '@mui/icons-material/Public';
+// import AcUnitIcon from '@mui/icons-material/AcUnit';
+// import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 export const navlink = [
   {
     url: "/",
@@ -110,31 +110,31 @@ export const aboutCarrier = [
 export const services = [
   {
     id: 1,
-    icon: <LocalShippingIcon />,
+    // icon: <LocalShippingIcon />,
     title: "Dry van",
     desc: "We have the capacity to handle all your dry van freight. Tap into one of the largest 3PL networks in North America.",
   },
   {
     id: 2,
-    icon: <AcUnitIcon />,
+    // icon: <AcUnitIcon />,
     title: "Temperature-controlled freight",
     desc: " Whether it’s keeping your freight cool or within a specific temperature range, we have the capacity to maintain the quality you expect in your product.",
   },
   {
     id: 3,
-    icon: <PublicIcon />,
+    // icon: <PublicIcon />,
     title: "Cross-border",
     desc: " Whether you’re shipping into or out of Mexico or Canada, we have the carrier relationships, technology, and experience to move your shipments with ease.",
   },
   {
     id: 4,
-    icon: <TableRowsIcon />,
+    // icon: <TableRowsIcon />,
     title: "Flatbed	",
     desc: "Our experts and extensive capacity have all your unique cargo covered with various types of flatbed trailer options. ",
   },
   {
     id: 5,
-    icon: <ScaleIcon />,
+    // icon: <ScaleIcon />,
     title: "Over-dimensional/ Heavy Haul",
     desc: " Is your freight oversized or too big to fit on a standard truck? Our network of contract carriers and private fleets gives you peace of mind knowing we can handle your freight even if it exceeds one or more of the standard legal size criteria.",
   },
@@ -148,25 +148,25 @@ export const services = [
 export const project = [
   {
     id: 1,
-    icon: <CloudOutlined />,
+    // icon: <CloudOutlined />,
     num: "89",
     title: "HAPPY CLIENTS",
   },
   {
     id: 2,
-    icon: <FavoriteBorder />,
+    // icon: <FavoriteBorder />,
     num: "231",
     title: "PROJECTS COMPLEATED",
   },
   {
     id: 3,
-    icon: <Public />,
+    // icon: <Public />,
     num: "108",
     title: "FILES DOWNLOADED",
   },
   {
     id: 4,
-    icon: <PersonOutlined />,
+    // icon: <PersonOutlined />,
     num: "1446",
     title: "LIENS OF CODE",
   },
@@ -266,32 +266,32 @@ export const blog = [
 ]
 export const contact = [
   {
-    icon: <AddLocationAltOutlined />,
+    // icon: <AddLocationAltOutlined />,
     text1: "2651 Main Street, Suit 124",
     text2: "Seattle, WA, 98101",
   },
   {
-    icon: <PhoneIphone />,
+    // icon: <PhoneIphone />,
     text1: "0123456789",
     text2: "0345627891",
   },
   {
-    icon: <EmailOutlined />,
+    // icon: <EmailOutlined />,
     text1: "hello@thetheme.io",
     text2: "inf0@brex-theme.io",
   },
 ]
-export const social = [
-  {
-    icon: <Facebook />,
-  },
-  {
-    icon: <Twitter />,
-  },
-  {
-    icon: <Instagram />,
-  },
-  {
-    icon: <YouTube />,
-  },
-]
+// export const social = [
+//   {
+//     icon: <Facebook />,
+//   },
+//   {
+//     icon: <Twitter />,
+//   },
+//   {
+//     icon: <Instagram />,
+//   },
+//   {
+//     icon: <YouTube />,
+//   },
+// ]
