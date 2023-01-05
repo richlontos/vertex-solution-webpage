@@ -15,8 +15,8 @@ export const LTLServices = () => {
       {/* <ServicesPageLTL /> */}
       {/* <Counter />
       <Portfolio /> */}
-      <TestimonialsLTL />
       <BlogLTL />
+      <TestimonialsLTL />
       <ContactServicesLTL />
     </>
   )
