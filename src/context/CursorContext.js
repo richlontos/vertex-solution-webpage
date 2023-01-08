@@ -37,34 +37,35 @@ const CursorProvider = ({ children }) => {
     default: {
       x: cursorPos.x - 16,
       y: cursorPos.y - 16,
-      backgroundColor: '#0e1112',
-    },
-    text: {
-      width: '150px',
+      background: (160, 29, 205, 0.27),
+    
+  },
+  text: {
+    width: '150px',
       height: '150px',
-      x: cursorPos.x - 72,
-      y: cursorPos.y - 72,
-      backgroundColor: '#fff',
-      mixBlendMode: 'difference',
+        x: cursorPos.x - 72,
+          y: cursorPos.y - 72,
+            backgroundColor: '#fff',
+              mixBlendMode: 'difference',
     },
-  };
+};
 
-  // mouse enter handler
-  const mouseEnterHandler = () => {
-    setCursorBG('text');
-  };
-  // mouse leaver handler
-  const mouseLeaveHandler = () => {
-    setCursorBG('default');
-  };
+// mouse enter handler
+const mouseEnterHandler = () => {
+  setCursorBG('text');
+};
+// mouse leaver handler
+const mouseLeaveHandler = () => {
+  setCursorBG('default');
+};
 
-  return (
-    <CursorContext.Provider
-      value={{ cursorVariants, cursorBG, mouseEnterHandler, mouseLeaveHandler }}
-    >
-      {children}
-    </CursorContext.Provider>
-  );
+return (
+  <CursorContext.Provider
+    value={{ cursorVariants, cursorBG, mouseEnterHandler, mouseLeaveHandler }}
+  >
+    {children}
+  </CursorContext.Provider>
+);
 };
 
 export default CursorProvider;

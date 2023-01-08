@@ -64,7 +64,7 @@ export const Banner = () => {
                                     <span className="tagline">Welcome to Vertex Solutions</span>
                                     <br />
                                     <h1>
-                                        Freight Broker
+                                    3rd-party logistics
                                     </h1>
                                     <br />
                                     <h1>

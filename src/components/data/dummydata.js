@@ -53,8 +53,8 @@ export const about = [
 ]
 export const aboutLTL = [
   {
-    desc: "Put our purchasing intelligence, proprietary technology, and expertise to work. As one of the largest 3PLs in North America, we leverage strong relationships with over 120 top volume LTL carriers nationwide to offer optimal pricing programs. ",
-    desc1: "Additionally, our EchoShip web portal for shippers provides instant access to our full network of less-than-truckload capacity 24/7, 365. Quote, book, ship, track, and manage invoices, all in one place.",
+    desc: "Our diverse Carrier Portfolio offers National, Regional, and Micro-Regional partners who are all service leaders in their geographical footprint. Our innovative TMS comes with a module explicitly built for LTL shippers that allows for efficient, cost-effective quoting, booking, tracking, tracing, and auditing of all of your LTL and Volume LTL freight.",
+    desc1: "Regardless of your load’s destination, rest assured we have the expertise and services to get it there.",
     cover: "../images/man2.png",
   },
 ]

@@ -6,12 +6,14 @@ import TestimonialsWarehouse from "../components/WarehousePage/TestimonialsWareh
 import BlogWarehouse from "../components/WarehousePage/BlogWarehouse"
 import ContactServicesWarehouse from "../components/WarehousePage/ContactServiceWarehouse"
 import '../components/serviceFolder/ServicesTest.css'
+import { Skills } from "../components/Skills"
 
 
 export const WarehouseServices = () => {
   return (
     <>
       <AboutServicesWarehouse />
+      <Skills />
       <ServicesPageWarehouse />
       {/* <Counter />
       <Portfolio /> */}

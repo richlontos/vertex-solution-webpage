@@ -26,6 +26,8 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import ContactUs from './pages/ContactUs';
 import Resources from './pages/Resources';
+import OurServices from './components/OurServices';
+import Careers from './pages/Careers';
 
 
 function App() {
@@ -44,8 +46,9 @@ function App() {
         <Route path='/carriers' element={<CarriersTab />}></Route>
         <Route path='/services' element={<HomeServices />}></Route>
         <Route path='/servicesLTL' element={<LTLServices />}></Route>
+        <Route path='/careers' element={<Careers />}></Route>
         <Route path='/contactus' element={<ContactUs />}></Route>
-        <Route path='/resources' element={<Resources />}></Route>
+        <Route path='/ourservices' element={<OurServices />}></Route>
         <Route path='/RailServices' element={<RailServices />}></Route>
         <Route path='/AirServices' element={<AirServices />}></Route>
         <Route path='/OceanServices' element={<OceanServices />}></Route>
@@ -58,7 +61,7 @@ function App() {
       <motion.div
         variants={cursorVariants}
         animate={cursorBG}
-        className='w-[32px] h-[32px] bg-dark  fixed top-0 left-0 pointer-events-none z-50 rounded-full'
+        className='w-[32px] h-[32px] mousePoint  fixed top-0 left-0 pointer-events-none z-50 rounded-full'
       ></motion.div>
     </div>
   );
