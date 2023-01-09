@@ -420,7 +420,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 
-
+.containerSkills{
+  margin-left: 20px;
+}
 
 .skill-bx {
   /* display: inline-block; */
@@ -435,7 +437,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
  position: relative;
- left: 20px;
+ left: 5px;
  padding: 60px 100px 0 75px;
  
 }
