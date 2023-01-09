@@ -1,8 +1,160 @@
 .paddingCompany {
+
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 50px;
-    background: rgba(103, 43, 121, 0.25);
+    padding: 10px;
+    background: rgba(189, 86, 220, 0.25);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
+.paddingCompanies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.estes {
+    margin-top: 17px;
+    margin-left: 10px;
+    height: 40px;
+
+}
+
+.XPO {
+    margin-top: 0px;
+    margin-left: 10px;
+    height: 80px;
+    width: 130px;
+
+}
+.SAIA {
+    margin-top: 13px;
+    margin-left: 10px;
+    height: 50px;
+    width: 110px;
+
+}
+
+.TF {
+    margin-top: 17px;
+    margin-left: 10px;
+    height: 40px;
+    width: 100px;
+
+}
+
+.RRF {
+    margin-top: 17px;
+    margin-left: 10px;
+    height: 40px;
+
+
+}
+.OD {
+    margin-top: 17px;
+    margin-left: 0px;
+    height: 40px;
+    padding-right: 0px;
+}
+
+
+.ABF {
+    margin-top: 12px;
+    margin-right: 0px;
+    height: 40px;
+}
+.YRC {
+    margin-top: 4px;
+    margin-right: 5px;
+    height: 65px;
+}
+
+.rlcarrier {
+    margin-top: 22px;
+    height: 30px;
+    width: 120px;
+
+}
+
+.company-bx {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: solid;
+    border-color:  rgba(75, 74, 78, 0.47);
+    background: linear-gradient(90deg, rgba(34, 32, 35, 0.47) 0%, rgba(23, 23, 63, 0.47) 35%, rgba(9, 57, 151, 0.47) 100%);
+    /* width: 97%; */
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  
+   padding: 10px 100px 0 50px;
+   
+  }
+
+  .containerCompanies{
+    padding-top: 150px;
+  }
+  
+
+  
+  /* .contactBack{
+    
+    /* display: flex;
+    max-height: auto;
+     
+     
+     
+    */
+  
+  
+  
+  .headerContact{
+    color: #040115;
+  }
+  
+  .viewServices {
+    background: rgba(63, 40, 40, 0.47);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 20px;
+  
+    margin-bottom: 10px;
+  
+  
+  }
+  
+  .company h2 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+  
+  .company p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 37px;
+  }
+  
+  .company-slider {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .company-slider .item img {
+    width: 50%;
+    margin: 0 auto 15px auto;
+  }
+  
+  .background-image-left {
+    top: 28%;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    z-index: -4;
+  }
