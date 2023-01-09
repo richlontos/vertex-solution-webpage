@@ -14,13 +14,13 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "TRACK SHIPMENTS",
-      description: "Always know where your shipments are and when they will arrive at their destination with tracking updates.",
+      title: "FULL TRUCK LOAD",
+      description: "FTL is industry shorthand for full truckload, or a truckload–most often a dry van or reefer–with a dedicated shipment from a single shipper to a single location. You may also see it referred to as just TL, or truckload. ",
       imgUrl: projImg1,
     },
     {
-      title: "OVER 789+ CARRIERS",
-      description: "We work with over 789+ different carriers allowing us to provide you the best possible cost and endless options.",
+      title: "LTL FREIGHT",
+      description: "Less than truckload freight shipping (LTL) is used for the transportation of small freight or when freight doesn’t require the use of an entire trailer. This shipping method can be used when freight weighs between 150 and 15,000 pounds.",
       imgUrl: projImg2,
     },
     {
@@ -29,9 +29,9 @@ export const Projects = () => {
       imgUrl: projImg3,
     },
     {
-      title: "TIMELY DELIVERY",
-      description: "We understand that time is important when it comes to shipping. Expedite your shipments at anytime.",
-      imgUrl: projImg4,
+      title: "VOLUME/PARTIAL",
+      description: "As part of Cargo Express Freight, you’re backed by the assets and experience of one of the most dependable transportation companies.",
+      imgUrl: projImg3,
     },
     // {
     //   title: "Business Startup",
