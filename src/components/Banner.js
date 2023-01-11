@@ -74,7 +74,7 @@ export const Banner = () => {
                                         </span>
                                     </h1>
                                     {/* <h1 style={{ "color": "aliceblue" }} >Freight Broker <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1> */}
-                                    <p style={{ color: "gainsboro" }}>YOUR COMPLETE BROKER COMPANY, <br></br> <span style={{ color: "gainsboro" }}>FROM START TO FINISH</span></p>
+                                    <p style={{ color: "gainsboro" }}>YOUR COMPLETE 3PL COMPANY, <br></br> <span style={{ color: "gainsboro" }}>FROM START TO FINISH</span></p>
 
                                     <button> <a href="#connect" style={{ 'color': "gainsboro", "text-decoration": "none" }}>Let’s Connect</a><ArrowRightCircle size={25} /></button>
 

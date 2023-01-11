@@ -78,19 +78,19 @@ export const GetQuote = () => {
 
   return (
     <section className="quote" id="connect">
-      <Container>
+      <Container className="formCenter">
         <Row className="align-items-center">
 
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>QUOTE REQUEST FORM</h2>
+                  <h2 className="headingCenter">QUOTE REQUEST FORM</h2>
                   <form ref={form}
                     onSubmit={sendEmail}>
                     <div className="quoteSection">
                       <Row id="contactBox">
-                        <h4>CONTACT INFO</h4>
+                        <h4 className="headingCenter">CONTACT INFO</h4>
                         <Col className="personalInfo">
                           <input type="text" placeholder="First Name" name="first_name" />
                         </Col>
@@ -116,7 +116,7 @@ export const GetQuote = () => {
 
                     {/* Bottom section */}
                     <div className="detailBox">
-                      <h2>DETAILS</h2>
+                      <h2 className="headingCenter">DETAILS</h2>
 
                       <Row id="detailsBox">
                         <Row id="zipCodes">
@@ -371,7 +371,7 @@ export const GetQuote = () => {
                     {/* Bottom section */}
 
                     <div className="aboutBox">
-                      <h4>ADDITIONAL COMMENTS</h4>
+                      <h4 className="headingCenter">ADDITIONAL COMMENTS</h4>
 
                       <Row>
                         <Col size={12} className="px-1">

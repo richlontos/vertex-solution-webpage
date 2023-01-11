@@ -25,13 +25,13 @@ export const Projects = () => {
     },
     {
       title: "ASSET BASED",
-      description: "As part of Cargo Express Freight, you’re backed by the assets and experience of one of the most dependable transportation companies.",
+      description: "As part of Cargo Vertex Solutions, you’re backed by the assets and experience of one of the most dependable transportation companies.",
       imgUrl: projImg3,
     },
     {
       title: "VOLUME/PARTIAL",
-      description: "As part of Cargo Express Freight, you’re backed by the assets and experience of one of the most dependable transportation companies.",
-      imgUrl: projImg3,
+      description: "FTL is industry shorthand for full truckload, or a truckload–most often a dry van or reefer–with a dedicated shipment from a single shipper to a single location",
+      imgUrl: projImg4,
     },
     // {
     //   title: "Business Startup",

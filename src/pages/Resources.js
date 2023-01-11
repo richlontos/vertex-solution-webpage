@@ -7,6 +7,9 @@ import img1 from '../assets/img/img1-1.jpg'
 // import img3 from "./assets/img3_1.jpg";
 import Blog from '../components/ServicesPages/Blog';
 import { Skills } from '../components/Skills'
+import ChooseUs from '../components/Choose-us/ChooseUs';
+import ResourcesTab from '../components/Resources/ResourcesTab'
+import FreeCourse from '../components/Free-course-section/FreeCourse'
 import BlogH from '../components/BlogH';
 import OurServices from '../components/OurServices';
 import FaqService from '../FaqService';
@@ -31,8 +34,9 @@ function Resources() {
   ];
   return (
     <div>
-     <FaqService />
+     <ChooseUs />
      <Skills />
+     <FreeCourse />
  
  </div>
   )

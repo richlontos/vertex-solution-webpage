@@ -7,7 +7,6 @@ import React from "react";
 // import contactImg from "./assets/img/contact-img.svg";
 import 'animate.css';
 import './Questions.css'
-import './Faq.js';
 
 
 const data = {

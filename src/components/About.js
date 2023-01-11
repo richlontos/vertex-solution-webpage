@@ -38,14 +38,13 @@ export const About = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="about-bx wow zoomIn" style={{ color: "gainsboro" }}>
-                            <h1>About Us</h1>
-                            <h3>Vertex Solutions</h3>
-                            <h5>Vertex Solutions is a smart, growing company dedicated to winning you over with real personalized service.
+                            <h2>Vertex Solutions</h2>
+                            <p>Vertex Solutions is a smart, growing company dedicated to winning you over with real personalized service.
                                 Vertex Solutions is emerging as one of the leaders in transportation logistics and technology solutions.
                                 Our vision is clear, our business plan sound and our management team focused.
                                 Independent owners are the key to our value advantage. Our global services provided through our network of qualified independent business owners, each with a personal investment in the total satisfaction of our customers. Our strategically aligned value structure creates the flexibility necessary to adjust when required and the reliability in our service to keep you as a customer.
                                 We value our people as our greatest assets. We are committed to giving them the tools necessary, including customer driven technology, to provide the highest level of customer attention in the transportation logistics industry.
-                                Let Vertex Solutions help you succeed.</h5>
+                                Let Vertex Solutions help you succeed.</p>
                             {/* <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme about-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />

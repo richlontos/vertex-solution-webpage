@@ -1,0 +1,45 @@
+.free__course__img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+
+
+.downloadsContainer{
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+}
+
+.downloadsRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.free__btn {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.free__course__img img {
+  border-radius: 10px;
+  width:  100px;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+}
+
+
+.downloadsContainer{
+  display: flex;
+  
+}
+
+.free__course__details h6 {
+  font-weight: 600;
+  line-height: 2rem;
+}
