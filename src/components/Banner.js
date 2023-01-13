@@ -70,7 +70,7 @@ export const Banner = () => {
                                     <h1>
 
                                         <span>
-                                            <Typewriter words={[" LTL.", " FTL.", "Rail", "Air", "Ocean", "volume"]} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+                                            <Typewriter words={[" LTL.", " FTL.", "Rail.", "Air.", "Ocean.", "volume."]} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
                                         </span>
                                     </h1>
                                     {/* <h1 style={{ "color": "aliceblue" }} >Freight Broker <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1> */}
