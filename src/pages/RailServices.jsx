@@ -8,6 +8,7 @@ import PortfolioLTL from "../components/LTLPage/PortfolioLTL"
 import ContactServicesRail from "../components/RailPage/ContactServiceRail"
 import '../components/serviceFolder/ServicesTest.css'
 import { Skills } from "../components/Skills"
+import ContactTab from "../components/ContactTab"
 
 
 export const LTLServices = () => {
@@ -20,7 +21,7 @@ export const LTLServices = () => {
       <PortfolioLTL /> 
       <TestimonialsRail />
       <BlogRail />
-      <ContactServicesRail />
+      <ContactTab />
     </>
   )
 }

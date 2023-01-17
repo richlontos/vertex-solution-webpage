@@ -30,7 +30,7 @@ export const Projects = () => {
     },
     {
       title: "VOLUME/PARTIAL",
-      description: "FTL is industry shorthand for full truckload, or a truckload–most often a dry van or reefer–with a dedicated shipment from a single shipper to a single location",
+      description: "Shipments that are larger than LTL but less than a full truck trailer are considered partial truckload. Partial truckload shipments usually range from 8 to 18 pallets, 8,000 to 27,500 pounds, and occupy more than 12 feet of linear space in a trailer.",
       imgUrl: projImg4,
     },
     // {
@@ -83,10 +83,10 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p></p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p></p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

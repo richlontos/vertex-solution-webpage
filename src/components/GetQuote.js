@@ -337,9 +337,10 @@ export const GetQuote = () => {
                             className="pickupAccesorials"
                           >
                             <option value="">Pick-up Accesorials</option>
-                            <option value="Business">Business</option>
+                            <option value="liftGate">Lift Gate</option>
                             <option value="Residential">Residential</option>
-                            <option value="Construction Site">Construction Site</option>
+                            <option value="limitedAccess">Limited Access</option>
+                            <option value="Hazmat">Hazmat</option>
                           </select>
                         <Col size={12} sm={7} className="px-1">
                           <input type="text" placeholder="Additional Notes" name="additional_notes" />
@@ -351,9 +352,10 @@ export const GetQuote = () => {
                             className="pickupAccesorials"
                           >
                             <option value="">Delivery Accesorials</option>
-                            <option value="Business">Business</option>
+                            <option value="liftGate">liftGate</option>
                             <option value="Residential">Residential</option>
-                            <option value="Construction Site">Construction Site</option>
+                            <option value="limitedAccess">Limited Access</option>
+                            <option value="Appointment">Appointment</option>
                           </select>
                         <Col size={12} sm={7} className="px-1">
                           <input type="text" placeholder="Additional Notes" name="additional_notes" />

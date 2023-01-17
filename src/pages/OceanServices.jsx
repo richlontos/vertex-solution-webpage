@@ -7,6 +7,7 @@ import BlogOcean from "../components/OceanPage/BlogOcean"
 import ContactServicesOcean from "../components/OceanPage/ContactServiceOcean"
 import '../components/serviceFolder/ServicesTest.css'
 import { Skills } from "../components/Skills"
+import ContactTab from "../components/ContactTab"
 
 
 export const OceanServices = () => {
@@ -19,7 +20,7 @@ export const OceanServices = () => {
       <Portfolio /> */}
       <TestimonialsOcean />
       <BlogOcean />
-      <ContactServicesOcean />
+      <ContactTab />
     </>
   )
 }

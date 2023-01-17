@@ -7,6 +7,7 @@ import BlogVolume from "../components/VolumeServices/BlogVolume"
 import ContactServicesVolume from "../components/VolumeServices/ContactServiceVolume"
 import '../components/serviceFolder/ServicesTest.css'
 import { Skills } from "../components/Skills"
+import ContactTab from "../components/ContactTab"
 // import PagesVolume from "../components/VolumeServices/PagesVolume"
 
 
@@ -21,7 +22,7 @@ export const VolumesServices = () => {
       {/* <PagesVolume /> */}
       <TestimonialsVolume />
       <BlogVolume />
-      <ContactServicesVolume />
+      <ContactTab />
     </>
   )
 }

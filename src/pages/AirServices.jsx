@@ -7,6 +7,7 @@ import BlogAir from "../components/AirPage/BlogAir"
 import ContactServicesAir from "../components/AirPage/ContactServiceAir"
 import '../components/serviceFolder/ServicesTest.css'
 import { Skills } from "../components/Skills"
+import ContactTab from "../components/ContactTab"
 
 
 export const AirServices = () => {
@@ -19,7 +20,7 @@ export const AirServices = () => {
       <Portfolio /> */}
       <TestimonialsAir />
       <BlogAir />
-      <ContactServicesAir />
+      <ContactTab />
     </>
   )
 }

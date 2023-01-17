@@ -66,7 +66,7 @@ export const FaqQuestions = () => {
       <div className="faqBody">
 
         <h1 class="centerplease">
-          Frequently Asked Questions
+          FAQ
         </h1>
         <br />
 
@@ -78,15 +78,26 @@ export const FaqQuestions = () => {
               How can I avoid extra charges on my shipment?
             </label>
             <div class="answers">
-              `Most Common Reasons for Extra Charges on LTL Shipments:
-              Re-weigh Fee:  If the weight of your shipment is found to be more than what was booked, you will be charged the rate at the higher weight.  If your shipment weighs less, you will be charged the rate at the lower weight.
-              Re-classification Fees:  If a freight carrier has quoted a shipment based on a Freight class/NMFC#, and the actual class is different for the items being shipped, a re-class adjustment can be applied.  Please make sure to use our Estimate Class button when quoting.
-              Re-consignment Fees:  A re-consignment fee may be assessed when the freight is rerouted in transit orwhen the shipper did not use the provided Bill of Lading.
-              Oversize/Overlength Fee:  Typically applies to shipments exceeding 8 feet in length. If the dimensions are factored into the quote in advance, this fee can be avoided.
-              Lift-gate:  Lift-gate trucks are required for freight where the pick up or drop off location does not have an accessible dock to move the shipment directly off the truck.  Keep in mind that lift-gate service could affect the estimated transit time.
-              Residential Pickup/Delivery:  Can apply to pick up or drop off locations that are not businesses. This can include businesses that are not visibly labeled to the public. To avoid this adjustment to a business, make sure the business name is accurately listed on the bill of lading.
-              Limited Access:  An adjustment may be applied if the pick up or drop off location has limited access.  Limited access locations include camps, churches/temples, educational facilities, construction sites, fairs and carnivals, storage units, military bases, mine sites, some government facilities, schools, businesses located outside city limits, rural locations and farms. Limited access may also include commercial businesses not open to the walk-in public or where an employee is not available to assist with loading or unloading.
-              Bill of Lading(BOL):  Changes to the BOL, including changes to the shipper address, consignee address, piece count, weight and freight call can result in adjustments if a carrier has based the freight quote on any of the provided information.`</div>
+              <h5>Most Common Reasons for Extra Charges on LTL Shipments:</h5>
+            <ul>
+              <li>Re-weigh Fee:  If the weight of your shipment is found to be more than what was booked, you will be charged the rate at the higher weight.  If your shipment weighs less, you will be charged the rate at the lower weight.</li>
+              <br />
+              <li>Re-classification Fees:  If a freight carrier has quoted a shipment based on a Freight class/NMFC#, and the actual class is different for the items being shipped, a re-class adjustment can be applied.  Please make sure to use our Estimate Class button when quoting.</li>
+              
+              <li>Re-consignment Fees:  A re-consignment fee may be assessed when the freight is rerouted in transit orwhen the shipper did not use the provided Bill of Lading.</li>
+              <br />
+              <li>Oversize/Overlength Fee:  Typically applies to shipments exceeding 8 feet in length. If the dimensions are factored into the quote in advance, this fee can be avoided.</li>
+              <br />
+              <li>Lift-gate:  Lift-gate trucks are required for freight where the pick up or drop off location does not have an accessible dock to move the shipment directly off the truck.  Keep in mind that lift-gate service could affect the estimated transit time.</li>
+              <br />
+              <li>Residential Pickup/Delivery:  Can apply to pick up or drop off locations that are not businesses. This can include businesses that are not visibly labeled to the public. To avoid this adjustment to a business, make sure the business name is accurately listed on the bill of lading.</li>
+              <br />
+              <li>Limited Access:  An adjustment may be applied if the pick up or drop off location has limited access.  Limited access locations include camps, churches/temples, educational facilities, construction sites, fairs and carnivals, storage units, military bases, mine sites, some government facilities, schools, businesses located outside city limits, rural locations and farms. Limited access may also include commercial businesses not open to the walk-in public or where an employee is not available to assist with loading or unloading.</li>
+              <br />
+              <li>Bill of Lading(BOL):  Changes to the BOL, including changes to the shipper address, consignee address, piece count, weight and freight call can result in adjustments if a carrier has based the freight quote on any of the provided information.</li>
+            </ul>
+              
+         
           </div>
 
           <div>
@@ -163,7 +174,7 @@ export const FaqQuestions = () => {
         </div>
        </div>
       </div>
-
+ </div>
     </>
   )
 }

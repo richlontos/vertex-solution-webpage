@@ -7,6 +7,7 @@ import BlogLTL from "../components/LTLPage/BlogLTL"
 import ContactServicesLTL from "../components/LTLPage/ContactServiceLTL"
 import '../components/serviceFolder/ServicesTest.css'
 import { Skills } from "../components/Skills"
+import ContactTab from "../components/ContactTab"
 
 
 export const LTLServices = () => {
@@ -19,7 +20,7 @@ export const LTLServices = () => {
       <Portfolio /> */}
       <BlogLTL />
       <TestimonialsLTL />
-      <ContactServicesLTL />
+      <ContactTab/>
     </>
   )
 }

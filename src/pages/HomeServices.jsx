@@ -9,6 +9,7 @@ import ServicesPage from "../components/ServicesPages/ServicesPage"
 import { Testimonials } from "../components/ServicesPages/Testimonials"
 import '../components/serviceFolder/ServicesTest.css'
 import { Skills } from "../components/Skills"
+import ContactTab from "../components/ContactTab"
 
 
 export const HomeServices = () => {
@@ -21,7 +22,7 @@ export const HomeServices = () => {
       <Portfolio /> */}
       <Testimonials />
       <Blog />
-      <ContactServices />
+      <ContactTab />
     </>
   )
 }

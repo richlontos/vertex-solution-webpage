@@ -74,6 +74,11 @@ export const aboutAir = [
     cover: "../images/man4.png",
   },
 ]
+export const faq = [
+  {
+    desc: ""    
+  },
+]
 
 export const aboutOcean = [
   {
