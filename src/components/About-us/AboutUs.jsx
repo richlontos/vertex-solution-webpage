@@ -36,7 +36,7 @@ const AboutUs = () => {
                 <button> <a href="#about" style={{ 'color': "gainsboro", "text-decoration": "none" }}><ArrowRightCircle size={20} />Learn More!</a></button>
                 <br />
                 <div className="about__counter">
-                  <div className=" d-flex gap-5 align-items-center">
+                  <div className="top_count">
                     <div className="single__counter">
                       <span className="counter">
                         {counterOn && <CountUp start={0} end={789} duration={2} suffix="+" />}
@@ -53,8 +53,7 @@ const AboutUs = () => {
                       <p className="counter__title">Customer Support</p>
                     </div>
                   </div>
-
-                  <div className=" d-flex gap-5 align-items-center">
+                  <div className="bottom_count">
                     <div className="single__counter">
                       <span className="counter">
                         {counterOn && <CountUp start={0} end={97.5} duration={2} suffix="%+" />}

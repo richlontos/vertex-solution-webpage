@@ -58,10 +58,10 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Services</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">About Us</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
@@ -82,8 +82,9 @@ export const Projects = () => {
                         }   
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p></p>
+                    <Tab.Pane eventKey="second">
+                      <h2><projImg4 /> Ready to get a quote?</h2>
+                      
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p></p>
