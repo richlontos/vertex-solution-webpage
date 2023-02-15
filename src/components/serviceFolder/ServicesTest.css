@@ -143,6 +143,10 @@ button.downloadVC {
   align-items: center;
 }
 
+.aboutUsCont{
+  padding-bottom: 50px;
+}
+
 
 .containerServiceCarrier {
   background: rgba(110, 68, 68, 0.19);
