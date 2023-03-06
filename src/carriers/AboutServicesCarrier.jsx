@@ -1,7 +1,5 @@
 import React from "react"
 import { Heading } from "../components/common/Heading"
-import { aboutCarrier } from "../components/data/dummydata"
-import b2 from "../assets/blog/b2.png";
 import { Container, Row, Col } from "react-bootstrap";
 import carrierImage from '../assets/blog/b2.png';
 

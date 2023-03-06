@@ -10,7 +10,7 @@ import { Testimonials } from "../components/ServicesPages/Testimonials"
 //import components
 import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Skills } from "../components/Skills";
+import { Skills } from "../components/Skills/Skills";
 // import { Skills } from "../components/Skills";
 // import ServicesTest from "../components/serviceFolder/ServicesTest";
 

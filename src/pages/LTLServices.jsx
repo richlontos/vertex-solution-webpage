@@ -6,7 +6,7 @@ import TestimonialsLTL from "../components/LTLPage/TestimonialsLTL"
 import BlogLTL from "../components/LTLPage/BlogLTL"
 import ContactServicesLTL from "../components/LTLPage/ContactServiceLTL"
 import '../components/serviceFolder/ServicesTest.css'
-import { Skills } from "../components/Skills"
+import { Skills } from "../components/Skills/Skills"
 import ContactTab from "../components/ContactTab"
 
 

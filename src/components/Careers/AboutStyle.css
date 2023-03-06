@@ -1,0 +1,36 @@
+.wrapperCareer {
+    width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.containerCareer {
+    max-width: 36rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.titleDesc {
+    text-align: center;
+}
+
+.titleContent {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.titlePara {
+    font-size: 1.875rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #a0aec0;
+}
+
+
+.lowerContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5rem;
+    background-color: white;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

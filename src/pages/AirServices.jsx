@@ -6,7 +6,7 @@ import TestimonialsAir from "../components/AirPage/TestimonialsAir"
 import BlogAir from "../components/AirPage/BlogAir"
 import ContactServicesAir from "../components/AirPage/ContactServiceAir"
 import '../components/serviceFolder/ServicesTest.css'
-import { Skills } from "../components/Skills"
+import { Skills } from "../components/Skills/Skills"
 import ContactTab from "../components/ContactTab"
 
 

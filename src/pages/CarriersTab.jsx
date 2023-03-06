@@ -6,7 +6,7 @@ import TestimonialsCarrier from "../carriers/TestimonialsCarrier"
 import BlogCarrier from "../carriers/BlogCarrier"
 import ContactServicesCarrier from "../carriers/ContactServiceCarrier"
 import '../components/serviceFolder/ServicesTest.css'
-import { Skills } from "../components/Skills"
+import { Skills } from "../components/Skills/Skills"
 import ContactTab from "../components/ContactTab"
 
 
