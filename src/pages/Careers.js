@@ -13,10 +13,11 @@ import { Banner } from '../components/Banner';
 function Careers() {
     return (
         <div>
-            <ContactBanner />
-            <Skills />
+            {/* <ContactBanner /> */}
              <CareerTabSupport />
+             <br />
              <CareerTabAbout />
+            <Skills />
             <ContactTab />
         </div>
     )
