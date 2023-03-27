@@ -30,6 +30,7 @@ export const ContactTab = () => {
     message: ''
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
+  const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -93,7 +94,7 @@ export const ContactTab = () => {
                       </Col>
 
                     </Row>
-                    <button type="button">send</button>
+                    <button type="submit" className="fomSubmit"><span>{buttonText}</span></button>
                   </form>
                 </div>}
             </TrackVisibility>

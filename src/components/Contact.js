@@ -30,6 +30,7 @@ export const Contact = () => {
     message: ''
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
+  const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -94,7 +95,7 @@ export const Contact = () => {
                       </Col>
                       
                     </Row>
-                        <button type="button">send</button>
+                    <button type="submit" className="fomSubmit"><span>{buttonText}</span></button>
                   </form>
                 </div>}
             </TrackVisibility>
