@@ -61,10 +61,9 @@ form#form {
     margin: 10px 0px;
 }
 
-input {
+input.quoteInput {
     position: relative;
-    /* padding: 12px;
-    margin-top: 10px; */
+    color: rgb(72, 68, 68);
     width: auto;
     text-transform: capitalize;
     font-weight: 003;
@@ -106,6 +105,7 @@ textarea {
     margin-top: 10px;
     height: 120px;
     width: 100%;
+    color: rgb(72, 68, 68);
     background: rgba(190, 188, 188, 0.17);
     border-radius: 16px;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
@@ -231,6 +231,7 @@ label {
 }
 .zipInput {
     padding-left: 20px;
+    color: rgb(72, 68, 68);
     background: rgba(190, 188, 188, 0.17);
     border-radius: 16px;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
@@ -238,6 +239,9 @@ label {
     height: 25px;
 }
 
+.inputColor{
+    color: rgb(72, 68, 68);
+}
 
 
 

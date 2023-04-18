@@ -73,19 +73,19 @@ export const Contact = () => {
                     onSubmit={sendEmail}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
-                        <input required type="text" placeholder="First Name" name="user_first"/>
+                        <input required type="text" placeholder="First Name" name="first_name"/>
                       </Col>
                       <Col size={12} sm={6} className="px-1">
-                        <input required type="text" placeholder="Last Name" name="user_last" />
+                        <input required type="text" placeholder="Last Name" name="last_name" />
                       </Col>
                       <Col size={12} sm={6} className="px-1">
-                        <input required type="email" placeholder="Email Address" name="user_email"/>
+                        <input required type="email" placeholder="Email Address" name="email"/>
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input required type="tel" placeholder="Phone No." name="phone_number" />
                       </Col>
                       <Col size={12} sm={6} className="px-1">
-                        <input required type="email" placeholder="Company Name" name="user_company"/>
+                        <input required type="email" placeholder="Company Name" name="company_name"/>
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input required type="tel" placeholder="Interested in" name="interested_in"/>
