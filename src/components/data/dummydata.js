@@ -223,23 +223,23 @@ export const portfolio = [
 export const testimonials = [
   {
     id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
+    text: "I had an issue with my current 3PL which is why I was exploring Vertex Solutions but Manish helped fix the main problem with a solution that involved a change of a setting that I think helps solve the problem. If other issues persist with our current 3PL I'm definitely coming to Vertex Solutions first.",
     image: "./images/testimonials/team-1.png",
-    name: "Alamin Musa",
+    name: "Chris Hamm",
     post: "Front End Developer",
   },
   {
     id: 2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
+    text: "Excellent company , I highly recommend. If you are looking for a cheap and fast 3PL, Vertex Solutions will be the best option in the US",
     image: "./images/testimonials/team-2.png",
-    name: "Alex Ander",
+    name: "Alex Garcia",
     post: "Back End Developer",
   },
   {
     id: 3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
+    text: "Vertex Solutions has been an awesome company to work with. Sales representative has been an amazing source for all my shipping needs. They take customer service very seriously and is great to deal with. Looking forward to doing business in the future !",
     image: "./images/testimonials/team-3.png",
-    name: "GorkCoder",
+    name: "cailin guerins",
     post: "React Developer",
   },
 ]
