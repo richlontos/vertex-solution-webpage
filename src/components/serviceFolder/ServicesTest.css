@@ -353,7 +353,8 @@ article .box:hover .overlay {
 }
 
 .testimonials .box {
-  max-width: 60%;
+  max-width: 100%;
+  padding-bottom: 150px;
 }
 
 .testimonials i {
