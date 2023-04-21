@@ -18,7 +18,7 @@ export const AirServices = () => {
       <ServicesPageAir />
       {/* <Counter />
       <Portfolio /> */}
-      <TestimonialsAir />
+      {/* <TestimonialsAir /> */}
       <BlogAir />
       <ContactTab />
     </>

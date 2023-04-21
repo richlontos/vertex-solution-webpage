@@ -6,6 +6,7 @@ import projImg1 from "../../assets/img/project-img1.png";
 import projImg2 from "../../assets/img/project-img2.png";
 import projImg3 from "../../assets/img/project-img3.png";
 import projImg4 from "../../assets/img/project-img4.png";
+import clickMe from "../../assets/img/clickme.png";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -54,46 +55,49 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>WHAT WE OFFER <br /> <span style={{'font-size': '20px'}}>WHY CHOOSE VERTEX SOLUTIONS</span></h2>
-                <p>Here at Vertex Solutions, we give you more control over your shipment and options. All of our clients get free access to our online TMS and have the ability to book shipments, track, retrieve POD’s, and print out your own invoices. You have the control to choose over 29+ carriers and the ability to auto dispatch your orders. Easy, simple, and effective.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Services</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">About Us</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row style={{'display':'flex', 'flexWrap':'wrap', 'justifyContent':'center'}}>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>WHAT WE OFFER <br /> <span style={{ 'font-size': '20px' }}>WHY CHOOSE VERTEX SOLUTIONS</span></h2>
+                  <p>Here at Vertex Solutions, we give you more control over your shipment and options. All of our clients get free access to our online TMS and have the ability to book shipments, track, retrieve POD’s, and print out your own invoices. You have the control to choose over 29+ carriers and the ability to auto dispatch your orders. Easy, simple, and effective.</p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">Services</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">About Us</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">Get Quote!</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Pane eventKey="first">
+                        <Row style={{ 'display': 'flex', 'flexWrap': 'wrap', 'justifyContent': 'center' }}>
+                          {
+                            projects.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
                                 />
-                            )
-                          })
-                        }   
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <h2> Ready to get a quote?</h2>
-                      
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p></p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+                              )
+                            })
+                          }
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+
+
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                          <h2>READY TO GET A QUOTE?</h2>
+                          <a href="/test"><img src={clickMe} alt="" className="clickMe" /></a>
+                        
+
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>}
             </TrackVisibility>
           </Col>
         </Row>

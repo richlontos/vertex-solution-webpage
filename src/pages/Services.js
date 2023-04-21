@@ -11,6 +11,7 @@ import { Testimonials } from "../components/ServicesPages/Testimonials"
 import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Skills } from "../components/Skills/Skills";
+import ContactTab from "../components/ContactTab";
 // import { Skills } from "../components/Skills";
 // import ServicesTest from "../components/serviceFolder/ServicesTest";
 
@@ -19,14 +20,14 @@ const Services = () => {
   
   return (
     <div>
-        <AboutServices />
-        <Skills />
+      <AboutServices />
+      <Skills />
       <ServicesPage />
       <Counter />
       <Portfolio />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Blog />
-      <ContactServices />
+      <ContactTab />
     </div>
   )
 }
