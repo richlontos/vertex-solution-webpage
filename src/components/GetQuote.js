@@ -208,6 +208,7 @@ export const GetQuote = () => {
                         <Col size={12} sm={6} className="px-1">
                           <input className="inputColor" type="number" placeholder="Total Pallets" name="total_pallets" />
                         </Col>
+
                         <Col size={12} sm={6} className="px-1 selectFlex">
                           <select
                             name="class"
@@ -281,6 +282,9 @@ export const GetQuote = () => {
                         </Col>
                         <Col size={12} sm={6} className="px-1">
                           <input className="inputColor" type="text" placeholder="Target Rate" name="target_rate" />
+                        </Col>
+                        <Col size={12} sm={6} className="px-1">
+                          <input className="inputColor" type="number" placeholder="Total Weight" name="total_weight" />
                         </Col>
                         <div className="checkBoxes">
                           <div>
@@ -383,7 +387,7 @@ export const GetQuote = () => {
 
                       <Row>
                         <Col size={12} className="px-1">
-                          <textarea  className="additional" rows="6" placeholder="type any additional comments" name="additionalNotes"></textarea>
+                          <textarea className="additional" rows="6" placeholder="type any additional comments" name="additionalNotes"></textarea>
                         </Col>
                       </Row>
                     </div>
