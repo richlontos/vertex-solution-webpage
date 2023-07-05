@@ -233,7 +233,8 @@ const generateQuoteTemplate = (formData) => {
     pickAdditionalNotes,
     deliveryAccesorials,
     dropAdditionalNotes,
-    additionalNotes
+    additionalNotes,
+    quoteType
   } = formData;
 
 
@@ -292,6 +293,10 @@ const generateQuoteTemplate = (formData) => {
   const bodyData8 = [[additionalNotes]];
   const table8 = generateTable('Additional Notes', headerData8, bodyData8);
 
+  const headerData9 = ['Target Rate', 'Total Weight', 'Quote Type'];
+  const bodyData9 = [[targetRate, totalWeight, quoteType]]
+  const table9 = generateTable('Summary', headerData9, bodyData9);
+
   let dimensionsString = '';
   formData.dimensions.forEach((dim, index) => {
     dimensionsString += `Line ${index + 1}:\n`;
@@ -330,7 +335,12 @@ const generateQuoteTemplate = (formData) => {
               <tr>
                   <td colspan="2" style="padding: 10px;">
                       ${table7}
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2" style="padding: 10px;">
                       ${table8}
+                      ${table9}
                   </td>
               </tr>
           </table>          
@@ -373,18 +383,16 @@ router.post("/quote", (req, res) => {
     commodity,
     targetRate,
     totalWeight,
+    weight,
     pickupAccesorials,
     pickAdditionalNotes,
     deliveryAccesorials,
     dropAdditionalNotes,
-    additionalNotes
+    additionalNotes,
+    quoteType
   } = req.body;
 
-  // Extract the dimensions array from the request body
-  // const dimensions = req.body.dimensions.map(dim => {
-  //   const { width, height, length } = dim;
-  //   return { width, height, length };
-  // });
+
   const dimensions = req.body.dimensions.map(dim => {
     const { width, height, length, pallets, weight, class: classType, commodity } = dim;
     return { width, height, length, pallets, weight, class: classType, commodity };
@@ -418,11 +426,13 @@ router.post("/quote", (req, res) => {
       commodity,
       targetRate,
       totalWeight,
+      weight,
       pickupAccesorials,
       pickAdditionalNotes,
       deliveryAccesorials,
       dropAdditionalNotes,
-      additionalNotes
+      additionalNotes,
+      quoteType
     }),
   };
 

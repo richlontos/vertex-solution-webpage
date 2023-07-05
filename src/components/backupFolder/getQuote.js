@@ -473,30 +473,215 @@ export const GetQuote = () => {
 /////////////////backend///////////////////
 
 const headerData7 = [
-    '#',
-    'Origin Type',
-    'Destination Type',
-    'Pieces',
-    'Total Weight',
-    'Description',
-    'Class',
-    'Dimensions',
-    'Target Rate'
-  ];
+  '#',
+  'Origin Type',
+  'Destination Type',
+  'Pieces',
+  'Total Weight',
+  'Description',
+  'Class',
+  'Dimensions',
+  'Target Rate'
+];
 
-  const formattedDimensions = dimensions.map(dim => `${dim.width}x${dim.height}x${dim.length}`);
-  const bodyData7 = [
-    [
-      '1',
-      originType,
-      destinationType,
-      totalPallets,
-      totalWeight,
-      commodity,
-      classType,
-      formattedDimensions.join(', '),
-      targetRate
-    ]
-  ];
+const formattedDimensions = dimensions.map(dim => `${dim.width}x${dim.height}x${dim.length}`);
+const bodyData7 = [
+  [
+    '1',
+    originType,
+    destinationType,
+    totalPallets,
+    totalWeight,
+    commodity,
+    classType,
+    formattedDimensions.join(', '),
+    targetRate
+  ]
+];
 
-  const table7 = generateTable('Items to Ship', headerData7, bodyData7);
+const table7 = generateTable('Items to Ship', headerData7, bodyData7);
+
+
+
+//////dimensions///
+{
+  dimensions.map((dim, index) => (
+    <React.Fragment key={index}>
+      <br />
+      <input
+        className="inputDimension inputColor"
+        placeholder="Number of Pallets"
+        type="number"
+        name="pallets"
+        value={dim.pallets}
+        onChange={(e) => {
+          handleChange(e, index);
+          const updatedDimensions = [...dimensions];
+          updatedDimensions[index][e.target.name] = e.target.value;
+          onFormUpdate('dimensions', updatedDimensions);
+        }}
+      />
+      <input
+        className="inputDimension inputColor"
+        placeholder="Total Weight"
+        type="number"
+        name="weight"
+        value={dim.weight}
+        onChange={(e) => {
+          handleChange(e, index);
+          const updatedDimensions = [...dimensions];
+          updatedDimensions[index][e.target.name] = e.target.value;
+          onFormUpdate('dimensions', updatedDimensions);
+        }}
+      />
+      <input
+        className="inputDimension inputColor"
+        placeholder="Class"
+        type="number"
+        name="class"
+        value={dim.class}
+        onChange={(e) => {
+          handleChange(e, index);
+          const updatedDimensions = [...dimensions];
+          updatedDimensions[index][e.target.name] = e.target.value;
+          onFormUpdate('dimensions', updatedDimensions);
+        }}
+      />
+      <input
+        className="inputDimension inputColor"
+        placeholder="Width"
+        type="number"
+        name="width"
+        value={dim.width}
+        onChange={(e) => {
+          handleChange(e, index);
+          const updatedDimensions = [...dimensions];
+          updatedDimensions[index][e.target.name] = e.target.value;
+          onFormUpdate('dimensions', updatedDimensions);
+        }}
+      />
+      <input
+        className="inputDimension inputColor"
+        placeholder="Height"
+        type="number"
+        name="height"
+        value={dim.height}
+        onChange={(e) => {
+          handleChange(e, index);
+          const updatedDimensions = [...dimensions];
+          updatedDimensions[index][e.target.name] = e.target.value;
+          onFormUpdate('dimensions', updatedDimensions);
+        }}
+      />
+      <input
+        className="inputDimension inputColor"
+        placeholder="Length"
+        type="number"
+        name="length"
+        value={dim.length}
+        onChange={(e) => {
+          handleChange(e, index);
+          const updatedDimensions = [...dimensions];
+          updatedDimensions[index][e.target.name] = e.target.value;
+          onFormUpdate('dimensions', updatedDimensions);
+        }}
+      />
+      {index > 0 && (
+        <button className="rowBtn" type="button" onClick={() => handleRemove(index)}>
+          -
+        </button>
+      )}
+    </React.Fragment>
+  ))
+}
+
+
+
+
+
+//////////
+
+<div className="checkBoxes">
+  <div>
+    <label>LTL Quote</label>
+    <input
+      value={formDetails.ltlQuote}
+      onChange={(e) => onFormUpdate('ltlQuote', e.target.value)}
+      type="checkbox"
+    />
+  </div>
+  <div>
+    <label>Volume LTL Quote</label>
+    <input
+      value={formDetails.volumeLtlQuote}
+      onChange={(e) => onFormUpdate('volumeLtlQuote', e.target.value)}
+      type="checkbox"
+    />
+  </div>
+  <div>
+    <label>FTL Quote</label>
+    <input
+      value={formDetails.ftlQuote}
+      onChange={(e) => onFormUpdate('ftlQuote', e.target.value)}
+      type="checkbox"
+    />
+  </div>
+  <div>
+    <label>Rail</label>
+    <input
+      value={formDetails.rail}
+      onChange={(e) => onFormUpdate('rail', e.target.value)}
+      type="checkbox"
+    />
+  </div>
+  <div>
+    <label>Air</label>
+    <input
+      value={formDetails.air}
+      onChange={(e) => onFormUpdate('air', e.target.value)}
+      type="checkbox"
+    />
+  </div>
+  <div>
+    <label>Ocean</label>
+    <input
+      value={formDetails.ocean}
+      onChange={(e) => onFormUpdate('ocean', e.target.value)}
+      type="checkbox"
+    />
+  </div>
+  <div>
+    <label>Warehousing</label>
+    <input
+      value={formDetails.warehousing}
+      onChange={(e) => onFormUpdate('warehousing', e.target.value)}
+      type="checkbox"
+    />
+  </div>
+
+</div>
+
+/////////////////////
+<select
+                                value={formDetails.classType}
+                                onChange={(e) => onFormUpdate('classType', e.target.value)}
+                              >
+                                <option value="">Class</option>
+                                <option value="50">50</option>
+                                <option value="55">55</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                                <option value="77.5">77.5</option>
+                                <option value="85">85</option>
+                                <option value="92.4">92.4</option>
+                                <option value="100">100</option>
+                                <option value="110">110</option>
+                                <option value="125">125</option>
+                                <option value="150">150</option>
+                                <option value="175">175</option>
+                                <option value="200">200</option>
+                                <option value="250">250</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                              </select>
