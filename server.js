@@ -386,8 +386,8 @@ router.post("/quote", (req, res) => {
   //   return { width, height, length };
   // });
   const dimensions = req.body.dimensions.map(dim => {
-    const { width, height, length, pallets, weight, class: classType } = dim;
-    return { width, height, length, pallets, weight, class: classType };
+    const { width, height, length, pallets, weight, class: classType, commodity } = dim;
+    return { width, height, length, pallets, weight, class: classType, commodity };
   });
 
 
