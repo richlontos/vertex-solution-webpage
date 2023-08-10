@@ -1,33 +1,34 @@
+# Logistics Management Web Application
+
+## Overview
+
+This is a responsive and efficient web application developed using React.js and Node.js that caters to the needs of a logistics management company. It provides customers with comprehensive information about our services and how we can assist them. From requesting quotes to tracking shipments, our web application serves as a one-stop solution for all logistic requirements.
+
+![Screenshot](3pl.png)
+
+## Key Features
+
+- **Quote Requests**: Customers can easily request a quote through the application.
+- **Shipment Tracking**: The application offers a seamless shipment tracking feature.
+- **Email Notifications**: Integrated with a server that sends out well-formatted email notifications using `juice.css`.
+
+## Technology Stack
+
+- Frontend: React.js
+- Backend: Node.js
+- Email Templates: `juice.css`
+
+## How to Run Locally
+
+Please provide instructions here on how to clone and run the application locally, for example:
+
+1. Clone the repository: `git clone <repo-url>`
+2. Install dependencies: `npm install`
+3. Run the server: `<command to run server>`
+4. Run the client: `npm start`
+
+## Future Work
+
+While the web application is live and fully functional, we continually strive to improve and add new features. Any suggestions or contributions are welcome!
 
 
-
-Built using:
-
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
-
-In the /personal-portfolio, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
