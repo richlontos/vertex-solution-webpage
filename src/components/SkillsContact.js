@@ -52,17 +52,19 @@ export const SkillsContact = () => {
                             <Row>
                                 <Col>
                                     <h5 className='paddingBannerTwo'><FaMapMarkerAlt style={{ "display": "inline", "marginRight": "10px" }} />OUR LOCATION</h5>
-                                    <p>1675 N Main St.<br />
-                                        Orange, CA 92867
+                                    <p>1151 Duryea Ave<br />
+                                        Irvine, CA 92614
                                     </p>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
                                     <h5 className='paddingBannerTwo'><FaMailBulk style={{ "display": "inline", "marginRight": "10px" }} />Emails</h5>
-                                    <a href="mailto:csr@vertex4solutions.net">csr@vertex4solutions.net</a>
+                                    <a href="mailto:customerservice@vertex4solutions.com">customerservice@vertex4solutions.com</a>
                                     <br />
-                                    <a href="mailto:billing@vertex4solutions.net">billing@vertex4solutions.net</a>
+                                    <a href="mailto:billing@vertex4solutions.com">billing@vertex4solutions.com</a>
+                                    <br />
+                                    <a href='mailto:ar@vertex4solutions.com'>ar@vertex4solutions.com</a>
                                        
                                     
                                 </Col>
