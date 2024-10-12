@@ -19,7 +19,7 @@ const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: "richard.lontos95@gmail.com",
-    pass: "fbex jzmn ojnb weof"
+    pass: "fbexjzmnojnbweof"
   },
 });
 
