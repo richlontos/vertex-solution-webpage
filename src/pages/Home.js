@@ -12,6 +12,7 @@ import { Testimonials } from "../components/ServicesPages/Testimonials";
 import { About } from "../components/About/About";
 import { SkillsContact } from "../components/SkillsContact";
 import { BestInClass } from "../components/BestInClass/BestInClass";
+import { Skills } from "../components/Skills/Skills";
 // import { Quote } from "react-bootstrap-icons";
 
 
@@ -21,7 +22,7 @@ const Home = () => {
         <div>
 
             <Banner />
-            <SkillsContact />
+            <Skills />
             <AboutUs />
             <BestInClass />
             <Company />

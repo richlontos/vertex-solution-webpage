@@ -4,7 +4,7 @@
 
 
 .containerSkills {
-    margin-left: 20px;
+    margin-left: 40px;
   }
   
   
@@ -64,12 +64,37 @@
   
   
   
-  .paddingBannerTwo{
-    /* margin: 10px; */
-    padding-top: 25px;
-  
-    line-height: normal;
-  }
+ .paddingBannerTwo {
+    text-align: left;
+}
+
+.email-row {
+  max-width: 100%; /* Prevents the row from exceeding screen width */
+  overflow-x: hidden;
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    text-align: left; /* Aligns text left */
+}
+
+
+.new-line {
+  display: block;
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+    .email-row {
+      padding-bottom: 100px;
+    }
+    #emailCenter{
+      padding-left: 20px;
+    }
+    #emails{
+      padding-left: 50px;
+    }
+
+    
+}
   
      
    

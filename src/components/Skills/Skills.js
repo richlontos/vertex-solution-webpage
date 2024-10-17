@@ -1,90 +1,120 @@
-
-import 'react-multi-carousel/lib/styles.css';
-import { FaHeadset, FaClock, FaMapMarkerAlt, FaServer } from 'react-icons/fa';
-import colorSharp from "../../assets/img/color-sharp.png"
+import "react-multi-carousel/lib/styles.css";
+import {
+  FaHeadset,
+  FaClock,
+  FaMapMarkerAlt,
+  FaMailBulk,
+  FaFax,
+} from "react-icons/fa";
+import colorSharp from "../../assets/img/color-sharp.png";
 import { Col, Row, Dropdown } from "react-bootstrap";
-import "../Skills/SkillsCss.css"
+import "../Skills/SkillsCss.css";
 
 export const Skills = () => {
-    const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
-        }
-    };
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
-    return (
-        <section className="skill" id="skills">
-            <div className="containerSkills">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="skill-bx wow zoomIn">
-                            <Row>
-
-                                <Col style={{ "display": "inline" }}>
-                                    <h5 ><FaHeadset style={{ "display": "inline", "marginRight": "10px" }} />  CALL CENTER</h5>
-                                    <p className='paddingBanner'>
-                                        Give us a free call<br />
-                                        (562) 966-7406
-                                    </p>
-
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col>
-                                    <h5 ><FaClock style={{ "display": "inline", "marginRight": "10px" }} />WORKING HOURS</h5>
-                                    <p>Mon-Fri 7AM - 5PM
-                                    </p>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col>
-                                    <h5 ><FaMapMarkerAlt style={{ "display": "inline", "marginRight": "10px" }} />OUR LOCATION</h5>
-                                    <p>1151 Duryea Ave<br />
-                                        Irvine, CA 92614
-                                    </p>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col className='viewServices'>
-                                    <h5 ><FaServer style={{ "display": "inline", "marginRight": "10px" }} />VIEW SERVICES</h5>
-                                    <Dropdown class="drop-down closed">
-                                        <Dropdown.Toggle variant="success" className="nav-button" id="dropdown-banner">
-                                            Select Service
-                                        </Dropdown.Toggle>
-
-                                        <Dropdown.Menu id="dropMenu">
-                                            <Dropdown.Item id="itemColor" href="/FTL">FTL</Dropdown.Item>
-                                            <Dropdown.Item id="itemColor" href="/LTL">LTL</Dropdown.Item>
-                                            <Dropdown.Item id="itemColor" href="/Rail">Rail</Dropdown.Item>
-                                            <Dropdown.Item id="itemColor" href="/Air">Air</Dropdown.Item>
-                                            <Dropdown.Item id="itemColor" href="/Ocean">Ocean</Dropdown.Item>
-                                            <Dropdown.Item id="itemColor" href="/volumePartial">Volume/Partial</Dropdown.Item>
-                                            <Dropdown.Item id="itemColor" href="/Warehouse">Warehousing and Distribution</Dropdown.Item>
-                                        </Dropdown.Menu>
-                                    </Dropdown>
-                                </Col>
-                            </Row>
-
-
-                        </div>
-                    </div>
-                </div>
+  return (
+    <section className="skill" id="skills">
+      <div className="containerSkills">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <Row>
+                <Col style={{ display: "inline" }}>
+                  <h5>
+                    <FaHeadset
+                      style={{ display: "inline", marginRight: "10px" }}
+                    />{" "}
+                    CALL CENTER
+                  </h5>
+                  <p className="paddingBanner">
+                    Give us a free call
+                    <br />
+                    (562) 966-7406
+                  </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <h5>
+                    <FaClock
+                      style={{ display: "inline", marginRight: "10px" }}
+                    />
+                    WORKING HOURS
+                  </h5>
+                  <p>Mon-Fri 7AM - 5PM</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <h5>
+                    <FaMapMarkerAlt
+                      style={{ display: "inline", marginRight: "10px" }}
+                    />
+                    OUR LOCATION
+                  </h5>
+                  <p>
+                    1151 Duryea Ave
+                    <br />
+                    Irvine, CA 92614
+                  </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <h5 className="paddingBannerTwo">
+                    <FaFax style={{ display: "inline", marginRight: "10px" }} />
+                    Fax #
+                  </h5>
+                  <p>562-966-7399</p>
+                </Col>
+              </Row>
+              <Row className="email-row">
+                <Col>
+                  <h5 id="emailCenter" className="paddingBannerTwo">
+                    <FaMailBulk
+                      style={{ display: "inline", marginRight: "10px" }}
+                    />
+                    Emails
+                  </h5>
+                  <div id="emails">
+                    <a href="mailto:ar@vertex4solutions.com">
+                      ar@vertex4solutions.com
+                    </a>
+                    <br />
+                    <a href="mailto:billing@vertex4solutions.com">
+                      billing@vertex4solutions.com
+                    </a>
+                    <br />
+                    <a href="mailto:customerservice@vertex4solutions.com">
+                      customerservice<span className="new-line"></span>@vertex4solutions.com
+                    </a>
+                  </div>
+                </Col>
+              </Row>
             </div>
-            <img className="background-image-left" src={colorSharp} alt="" />
-        </section>
-    )
-}
+          </div>
+        </div>
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="" />
+    </section>
+  );
+};
