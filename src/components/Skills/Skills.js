@@ -48,7 +48,7 @@ export const Skills = () => {
                   <p className="paddingBanner">
                     Give us a free call
                     <br />
-                    (562) 966-7406
+                    <a href="tel:5629667399">562-966-7399</a>
                   </p>
                 </Col>
               </Row>
@@ -71,11 +71,14 @@ export const Skills = () => {
                     />
                     OUR LOCATION
                   </h5>
-                  <p>
-                    1151 Duryea Ave
-                    <br />
-                    Irvine, CA 92614
-                  </p>
+                  <p
+  style={{ cursor: 'pointer' }}
+  onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=1151+Duryea+Ave,+Irvine,+CA+92614", "_blank")}
+>
+  1151 Duryea Ave
+  <br />
+  Irvine, CA 92614
+</p>
                 </Col>
               </Row>
               <Row>
@@ -105,7 +108,7 @@ export const Skills = () => {
                     </a>
                     <br />
                     <a href="mailto:customerservice@vertex4solutions.com">
-                      customerservice<span className="new-line"></span>@vertex4solutions.com
+                    customerservice<br/>@vertex4solutions.com
                     </a>
                   </div>
                 </Col>
