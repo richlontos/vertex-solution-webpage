@@ -126,7 +126,7 @@ export const Footer = () => {
               <div class="footer-menu">
                 <ul>
                   <li>
-                    <a href="#">TERMS & CONDITIONS</a>
+                    <a href="/termsConditions">TERMS & CONDITIONS</a>
                   </li>
                   <li>
                     <a href="#">PRIVACY POLICY</a>
