@@ -16,10 +16,10 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server Running on port ${port}`));
 
 const contactEmail = nodemailer.createTransport({
-  service: 'outlook',
+  service: 'gmail',
   auth: {
-    user: "richlontos95@outlook.com",
-    pass: "ytmvyjhwbmgqkfix"
+    user: "Cesarsaldivar88@gmail.com",
+    pass: "tfygfhggehiejobi"
   },
 });
 
@@ -172,7 +172,7 @@ router.post("/contact", (req, res) => {
 
   const mail = {
     from: name,
-    to: "richlontos95@outlook.com",
+    to: "Cesarsaldivar88@gmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: generateEmailTemplate(req.body),
   };
@@ -403,7 +403,7 @@ router.post("/quote", (req, res) => {
 
   const mail = {
     from: `${firstName} ${lastName}`,
-    to: "richlontos95@outlook.com",
+    to: "Cesarsaldivar88@gmail.com",
     subject: "Quote Form Submission - Portfolio",
     html: generateQuoteTemplate({
       firstName,
