@@ -16,10 +16,12 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server Running on port ${port}`));
 
 const contactEmail = nodemailer.createTransport({
-  service: 'gmail',
+  host: "smtp.office365.com", // Use Outlook's SMTP host
+  port: 587, // Standard port for TLS
+  secure: false, // Use false for TLS
   auth: {
-    user: "richlontos95@outlook.com",
-    pass: "ytmvyjhwbmgqkfix"
+    user: "richlontos95@outlook.com", // Your Outlook email
+    pass: "ytmvyjhwbmgqkfix", // The app password for your Outlook account
   },
 });
 
