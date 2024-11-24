@@ -18,8 +18,8 @@ app.listen(port, () => console.log(`Server Running on port ${port}`));
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "richard.lontos95@gmail.com",
-    pass: "fbexjzmnojnbweof"
+    user: "richlontos95@outlook.com",
+    pass: "ytmvyjhwbmgqkfix"
   },
 });
 
