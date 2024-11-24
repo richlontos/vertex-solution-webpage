@@ -18,8 +18,8 @@ app.listen(port, () => console.log(`Server Running on port ${port}`));
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "Cesarsaldivar88@gmail.com",
-    pass: "tfygfhggehiejobi"
+    user: "richard.lontos95@gmail.com",
+    pass: "jkzxfwfqipyhvdxi"
   },
 });
 
@@ -172,7 +172,7 @@ router.post("/contact", (req, res) => {
 
   const mail = {
     from: name,
-    to: "Cesarsaldivar88@gmail.com",
+    to: "richard.lontos95@gmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: generateEmailTemplate(req.body),
   };
@@ -403,7 +403,7 @@ router.post("/quote", (req, res) => {
 
   const mail = {
     from: `${firstName} ${lastName}`,
-    to: "Cesarsaldivar88@gmail.com",
+    to: "richard.lontos95@gmail.com",
     subject: "Quote Form Submission - Portfolio",
     html: generateQuoteTemplate({
       firstName,
