@@ -172,7 +172,7 @@ router.post("/contact", (req, res) => {
 
   const mail = {
     from: name,
-    to: "richard.lontos95@gmail.com",
+    to: "richlontos95@outlook.com",
     subject: "Contact Form Submission - Portfolio",
     html: generateEmailTemplate(req.body),
   };
@@ -403,7 +403,7 @@ router.post("/quote", (req, res) => {
 
   const mail = {
     from: `${firstName} ${lastName}`,
-    to: "richard.lontos95@gmail.com",
+    to: "richlontos95@outlook.com",
     subject: "Quote Form Submission - Portfolio",
     html: generateQuoteTemplate({
       firstName,
